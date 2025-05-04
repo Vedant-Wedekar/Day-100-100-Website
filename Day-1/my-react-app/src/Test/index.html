@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smooth Scroll Counter</title>
+  <style>
+    body {
+      height: 3000px; /* For scrollable content */
+      margin: 0;
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    #counter {
+      position: fixed;
+      top: 40px;
+      left: 40px;
+      font-size: 80px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="counter">0</div>
+
+  <script>
+    const counter = document.getElementById("counter");
+    let currentDisplayed = 0;
+
+    function animateCounter(toValue) {
+      const fromValue = currentDisplayed;
+      const duration = 300;
+      const startTime = performance.now();
+
+      function update(time) {
+        const progress = Math.min((time - startTime) / duration, 1);
+        const eased = fromValue + (toValue - fromValue) * progress;
+        counter.textContent = Math.floor(eased);
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          currentDisplayed = toValue;
+        }
+      }
+
+      requestAnimationFrame(update);
+    }
+
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+      const newCount = Math.min(Math.floor(scrollY / 300) + 1, 999); // Adjust sensitivity
+      if (newCount !== currentDisplayed) {
+        animateCounter(newCount);
+      }
+    });
+  </script>
+</body>
+</html>
