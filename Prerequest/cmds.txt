@@ -3,25 +3,15 @@ npm create vite@latest my-react-app -- --template react
 cd my-app
 
 ✅ 2. Install Tailwind CSS and dependencies
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+npm install tailwindcss @tailwindcss/vite
 
 ✅ 3. Configure Tailwind (tailwind.config.js)
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+import tailwindcss from '@tailwindcss/vite'
+
+    tailwindcss(),
 
 ✅ 4. Add Tailwind to CSS (src/index.css)
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 ✅ 5. Run the app
 npm start
