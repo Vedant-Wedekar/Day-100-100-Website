@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Footer Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      background-color: #111;
+      color: white;
+      padding: 40px;
+    }
+
+    .footer-column {
+      width: 30%;
+      position: relative;
+      transition: opacity 0.4s ease;
+    }
+
+    .footer-column h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+
+    .footer-column p {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    /* Privacy Reveal */
+    .privacy-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.4s ease;
+    }
+
+    .footer-column:hover .privacy-content {
+      max-height: 200px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Fade others when Privacy is hovered */
+    .footer:hover .footer-column {
+      opacity: 0.5;
+    }
+
+    .footer-column:hover {
+      opacity: 1 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-column">
+      <h3>About</h3>
+      <p>Studio—VW®</p>
+      <p>Vedant Wedekar</p>
+    </div>
+    <div class="footer-column">
+      <h3>Links</h3>
+      <p>Home</p>
+      <p>Projects</p>
+      <p>Contact</p>
+    </div>
+    <div class="footer-column">
+      <h3 class="hover-trigger">Privacy</h3>
+      <div class="privacy-content">
+        <p>This website respects your privacy. No cookies are used. Your data stays yours.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
