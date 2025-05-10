@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.fnt{
+    font-family: "Amiri", serif;
+}
+
+.jp{
+    font-family: "Nanum Gothic Coding", monospace;
+}
