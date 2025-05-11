@@ -1,7 +1,9 @@
 import React from 'react'
+import { BsArrowUpRight } from "react-icons/bs";
 import k from './assets/bgkk.jpg'
 import p11 from './assets/p11.jpg'
 import p12 from './assets/p12.jpg'
+import p13 from './assets/p13.jpg'
 const App = () => {
   return (
     <div className='w-full h-screen '>
@@ -50,7 +52,27 @@ const App = () => {
             </div>
           </div>
 
-          
+
+
+            <div className="flex justify-between fnt"> 
+                       <div className=" ml-10 mt-10">
+                             <div className="">fig 02.</div>
+                             <div className=""><img style={{width:500,height:600}} src={p13}></img></div>
+                      </div>
+            
+                       <div className="mr-10 mt-10 pt-100 pr-100 w-[700px] h-[300px]">
+                                   <div className="">More:</div>
+                                   <hr /> 
+                                   <div className="flex justify-between">
+                                   <div className="mt-2">View All Available Work </div> <BsArrowUpRight  style={{marginTop:10 , marginBottom:10}} /></div>
+                                   <hr /> 
+
+                       </div>
+          </div>
+
+          <div className="">
+            
+          </div>
 
 
 
@@ -58,7 +80,9 @@ const App = () => {
 
 
 
-    </div>
+
+
+          </div>
   )
 }
 
