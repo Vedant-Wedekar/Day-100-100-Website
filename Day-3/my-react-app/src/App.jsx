@@ -4,6 +4,8 @@ import k from './assets/bgkk.jpg'
 import p11 from './assets/p11.jpg'
 import p12 from './assets/p12.jpg'
 import p13 from './assets/p13.jpg'
+import bg2 from './assets/bg-k2.jpg'
+import bg3 from './assets/bg-k3.jpg'
 const App = () => {
   return (
     <div className='w-full h-screen '>
@@ -70,9 +72,64 @@ const App = () => {
                        </div>
           </div>
 
-          <div className="">
-            
+          <div className="px-10 py-20 ">
+            <hr/>
+            <div className=" jp py-10">  (The Gallery)</div>
+            <div className=" fnt text-8xl font-medium flex justify-between">
+            <div className="">The Seaport </div>
+            <div className="">Gallery</div>
           </div>
+          </div>
+
+          <div className=""><img style={{width:1500 , paddingLeft:600}} src={bg2}></img></div>
+
+
+
+
+
+
+
+
+
+          <div className="pt-30 ">
+
+          <div className="flex justify-between px-10 fnt font-medium mb-4">
+            <div className="">116 TG VED </div>
+            <div className=""> NAGPUR,MH</div>
+          </div>
+          <div className="px-10"><img src={bg3}></img></div>
+          </div>
+
+
+
+
+          <div className="flex justify-between mt-30 px-6 py-6 FNT">
+            <div className="">Art Objects <br></br> Nagpur,MH</div>
+
+            <div className="">
+              <div className="">🚀 100 Days, 100 Websites — Day 3</div>
+              <H1>       Today marks <strong>Day 3</strong> of my <em>100 Days, 100 Websites</em> challenge! 🎯<br />
+        I'm learning, building, and sharing every single day—one website at a time. <br />
+        It's already been an exciting journey, and I'm pumped for what's ahead!</H1>
+        <H1>  💻 Check out the code and progress on my{' '}</H1>
+        <A href="https://github.com/Vedant-Wedekar" > GitHub profile</A>
+
+
+
+            </div>
+
+            <div className="flex justify-between w-[250px] h-2  0 ">
+            <div className="">Instagram <br></br> <a href='https://www.instagram.com/pvt__.ved/'> VEDANT.Dev</a></div>
+            <div className="">DO HARD WORK <br></br>MF</div>
+
+            </div>
+
+
+
+
+          </div>
+
+
 
 
 

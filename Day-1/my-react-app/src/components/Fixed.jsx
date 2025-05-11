@@ -82,7 +82,9 @@ const Fixed = () => {
                          <p className="text-xs mt-1 opacity-70">© {new Date().getFullYear()} 100 Days / 100 Websites Challenge</p>
                          </div>
 
+                           
 
+                         
 
            
            
