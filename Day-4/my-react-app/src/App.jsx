@@ -155,7 +155,7 @@ function App() {
                 <h1 className="text-[12rem] leading-none -ml-40">auto</h1>
               </div>
               <img
-                className="absolute character -bottom-[150%] w-[420px] left-1/2 -translate-x-1/2  scale-[3] rotate-[-20deg]"
+                className="absolute character ml-50  -bottom-[150%] w-[400px] left-1/2 -translate-x-1/2  scale-[3] rotate-[-20deg]"
                 src="./girlbg.png"
                 alt=""
               />
@@ -174,44 +174,50 @@ function App() {
               />
             </div>
           </div>
-          <div className="w-full h-screen flex items-center justify-center bg-black">
+
+          <div className="w-full h-screen flex items-center justify-center bg-black ">
             <div className="cntnr flex text-white w-full h-[80%] ">
               <div className="limg relative w-1/2 h-full">
                 <img
-                  className="absolute scale-[1.3] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  className="absolute scale-[1.3] w-[500px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                   src="./imag.png"
                   alt=""
                 />
               </div>
-              <div className="rg w-[30%] py-30">
-                <h1 className="text-8xl">Still Running,</h1>
-                <h1 className="text-8xl">Not Hunting</h1>
-                <p className="mt-10 text-xl font-[Helvetica_Now_Display]">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Distinctio possimus, asperiores nam, omnis inventore nesciunt
-                  a architecto eveniet saepe, ducimus necessitatibus at
-                  voluptate.
+              <div className="rg w-[30%] ">
+                <h1 className="text-6xl">Still Running,</h1>
+                <h1 className="text-5xl">Not Hunting</h1>
+                <p className="mt-10 text-l font-[Helvetica_Now_Display]">
+                Vice City, USA.
+                Jason and Lucia have always known the deck is stacked against them. But when an easy score goes wrong, they find themselves on the darkest side of the sunniest place in America, in the middle of a criminal conspiracy stretching across the state of Leonida — forced to rely on each other more than ever if they want to make it out alive.
                 </p>
-                <p className="mt-3 text-xl font-[Helvetica_Now_Display]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                  eius illum fugit eligendi nesciunt quia similique velit
-                  excepturi soluta tenetur illo repellat consectetur laborum
-                  eveniet eaque, dicta, hic quisquam? Ex cupiditate ipsa nostrum
-                  autem sapiente.
+                <p className="mt-3 text-l font-[Helvetica_Now_Display]">
+                Grand Theft Auto VI is an upcoming action-adventure game developed and published by Rockstar Games. It is due to be the eighth main Grand Theft Auto game, following Grand Theft Auto V, and the sixteenth entry overall.
                 </p>
-                <p className="mt-10 text-xl font-[Helvetica_Now_Display]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                  eius illum fugit eligendi nesciunt quia similique velit
-                  excepturi soluta tenetur illo repellat consectetur laborum
-                  eveniet eaque, dicta, hic quisquam? Ex cupiditate ipsa nostrum
-                  autem sapiente.
-                </p>
-                <button className="bg-yellow-500 px-10 py-10 text-black mt-10 text-4xl">
-                  Download Now
+         
+                <button className="bg-yellow-500 px-5 py-4 text-black mt-5 text-4xl">
+                <a href="https://www.rockstargames.com/VI"> Download Now</a> 
                 </button>
               </div>
             </div>
           </div>
+
+          <div className=""><footer style={{ backgroundColor: '#111', color: '#ccc', padding: '2rem 1rem', textAlign: 'center', fontFamily: 'Arial, sans-serif', borderTop: '2px solid #555' }}>
+  <div style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>🚀 100 Days, 100 Websites — <strong>Day 4</strong></div>
+  
+  <p style={{ fontSize: '1rem', maxWidth: '600px', margin: '0 auto 1rem' }}>
+    Today marks <strong>Day 4</strong> of my <em>100 Days, 100 Websites</em> challenge. 🎯 <br />
+    I’m building, learning, and shipping code daily — one site at a time. Each project brings new skills, and this GTA VI-themed site is part of that epic journey. <br />
+    💻 Track my code, progress, and future builds on 
+    <a href="https://github.com/Vedant-Wedekar" target="_blank" rel="noopener noreferrer" style={{ color: '#fc0', textDecoration: 'none', marginLeft: '5px' }}>GitHub</a>.
+  </p>
+
+  <div style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#888' }}>
+    🕹️ Built by a gamer, for gamers — stay tuned for more drops. <br />
+    🔥 "Work smart. Build hard. Respawn better."
+  </div>
+</footer>
+ </div>
         </div>
       )}
     </>
