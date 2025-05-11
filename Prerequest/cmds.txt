@@ -14,4 +14,4 @@ import tailwindcss from '@tailwindcss/vite'
 @import "tailwindcss";
 
 ✅ 5. Run the app
-npm start
+npm run dev 
