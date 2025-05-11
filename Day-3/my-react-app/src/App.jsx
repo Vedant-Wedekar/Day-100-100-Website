@@ -103,16 +103,25 @@ const App = () => {
 
 
 
-          <div className="flex justify-between mt-30 px-6 py-6 FNT">
+          <div className="flex justify-between mt-30 px-6 py-6 fnt">
             <div className="">Art Objects <br></br> Nagpur,MH</div>
 
-            <div className="">
-              <div className="">🚀 100 Days, 100 Websites — Day 3</div>
+            <div className="grid grid-cols-1 items-center">
+              {/* <div className="">🚀 100 Days, 100 Websites — Day 3</div>
               <H1>       Today marks <strong>Day 3</strong> of my <em>100 Days, 100 Websites</em> challenge! 🎯<br />
         I'm learning, building, and sharing every single day—one website at a time. <br />
         It's already been an exciting journey, and I'm pumped for what's ahead!</H1>
         <H1>  💻 Check out the code and progress on my{' '}</H1>
-        <A href="https://github.com/Vedant-Wedekar" > GitHub profile</A>
+        <A href="https://github.com/Vedant-Wedekar" > GitHub profile</A> */}
+        <div className="">🚀 100 Days, 100 Websites — Day 3</div>
+        <div className=""> Today marks Day 3 of my 100 Days, 100 Websiteschallenge! 🎯<br /> 
+        I'm learning, building, and sharing every single day—one website at a time. <br />
+        It's already been an exciting journey, and I'm pumped for what's ahead!   <br />
+        💻 Check out the code and progress on my{' '}<br />
+        <a href="https://github.com/Vedant-Wedekar" > GitHub profile</a>
+
+         </div>
+
 
 
 
