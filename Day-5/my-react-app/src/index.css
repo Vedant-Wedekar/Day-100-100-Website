@@ -1,1 +1,4 @@
 @import "tailwindcss";
+.gh{
+    background-image: url('/src/assets/gh.png');
+}
