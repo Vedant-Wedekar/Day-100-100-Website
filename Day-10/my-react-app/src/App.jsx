@@ -67,6 +67,14 @@ function App() {
             At AIHUB, our goal is to democratize AI, making it accessible and beneficial for everyone. Join us in
             creating a smarter, more interconnected world.
           </p>
+           <p>
+            At AIHUB, our goal is to democratize AI, making it accessible and beneficial for everyone. Join us in
+            creating a smarter, more interconnected world.
+          </p> <p>
+            At AIHUB, our goal is to democratize AI, making it accessible and beneficial for everyone. Join us in
+            creating a smarter, more interconnected world.
+          </p>
+
         </div>
 
         <div className="service-items">
