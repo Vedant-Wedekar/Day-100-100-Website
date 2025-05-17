@@ -3,7 +3,7 @@ import {  useTexture } from '@react-three/drei'
 import * as THREE from 'three'
 import { useFrame } from '@react-three/fiber'
 const Cyl = () => {
-      let tex = useTexture('./src/assets/image.png')
+      let tex = useTexture('/image.png')
       let Cyl = useRef(null);
       useFrame((state,delta) => {
     Cyl.current.rotation.y += delta     
