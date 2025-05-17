@@ -100,10 +100,9 @@ function App() {
 
       <div className="video-sec" id="discover">
         <div className="header">
-          <p>
-            Discover our AI tools—from natural language processing to computer vision—that revolutionize your
-            work!
-          </p>
+          <p> 
+            Discover our AI tools—from natural language processing to computer vision—that revolutionize your work!
+          </p> 
           <h3>WHY CHOOSE AIHUB</h3>
         </div>
         <div className="video">
