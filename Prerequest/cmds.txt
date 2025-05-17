@@ -15,3 +15,12 @@ import tailwindcss from '@tailwindcss/vite'
 
 ✅ 5. Run the app
 npm run dev 
+
+
+npm install @vitejs/plugin-react --save-dev
+
+
+cd ..
+
+cd Day-3/my-react-app
+
