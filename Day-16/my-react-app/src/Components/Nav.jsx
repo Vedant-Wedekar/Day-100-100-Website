@@ -1,33 +1,28 @@
 import React from 'react'
-import Hero from './Components/Hero'
-import Login from './Components/Login'
-import Footer from './Components/Footer'
-import Nav from './Components/Nav'
-import { BrowserRouter as Router } from 'react-router-dom'
-const App = () => {
-      const navLinks = [
-          { name: 'Home', path: '/' },
-          { name: 'Products', path: '/' },
-          { name: 'Contact', path: '/' },
-          { name: 'About', path: '/' },
-      ];
-  
-      const ref = React.useRef(null)
-  
-      const [isScrolled, setIsScrolled] = React.useState(false);
-      const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  
-      React.useEffect(() => {
-          const handleScroll = () => {
-              setIsScrolled(ref.current.scrollTop > 10);
-          };
-          ref.current.addEventListener("scroll", handleScroll);
-          return () => window.removeEventListener("scroll", handleScroll);
-      }, []);
-  return (
-    <Router>
-      <div>
-         <div ref={ref} className="h-screen  overflow-y-scroll">
+
+const Nav = () => {
+    const navLinks = [
+        { name: 'Home', path: '/' },
+        { name: 'Products', path: '/' },
+        { name: 'Contact', path: '/' },
+        { name: 'About', path: '/' },
+    ];
+
+    const ref = React.useRef(null)
+
+    const [isScrolled, setIsScrolled] = React.useState(false);
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+    React.useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(ref.current.scrollTop > 10);
+        };
+        ref.current.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    return (
+        <div ref={ref} className="h-88 md:h-64 overflow-y-scroll">
             <p className="w-10 h-[500px]"></p>
             <nav className={`fixed top-0 left-0 bg-indigo-500 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4" : "py-4 md:py-6"}`}>
 
@@ -93,26 +88,8 @@ const App = () => {
                     </button>
                 </div>
             </nav>
-        
-
-
-        
-
-
-
-
-
-
-
-            <Footer />
-        <Login />
-        <Hero />
-      </div>
         </div>
-
-    </Router>
-  )
+    );
 }
 
-
-export default App
+export default Nav
