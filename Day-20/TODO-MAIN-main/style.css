@@ -1,0 +1,402 @@
+/* Reset default margins and padding */
+* {
+  margin: 0; 
+  padding: 0;
+  font-family: cursive;
+}
+
+/* Set background image for the body */
+body {
+  background-image: url(backgroundimg.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: scroll;
+}
+
+/* Container for the todo list */
+.todo-container {
+  background: transparent;
+  border: 2px solid #e6b7eca1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(21, 183, 185, 1);
+  width: 600px;
+  max-height: 84vh;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 3s ease-in-out;
+  overflow: hidden;
+}
+
+/* Header styling */
+header {
+  position: sticky;
+  top: 0;
+  background: transparent;
+  padding-bottom: 4px; 
+  margin-bottom: 4px;
+  z-index: 1;
+}
+
+/* Title styling */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  font-size: 28px;
+  text-align: center;
+  color: #000814;
+  padding: 3px;
+}
+
+/* Subtitle styling */
+h4 {
+  margin-top: 0;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  padding: 4px;
+}
+
+/* Styling for the empty state image */
+#emptyImage {
+  opacity: 0.5;
+}
+
+/* Input container styling */
+.input-cont {
+  display: flex;
+  border: 2px solid #e6b7eca1;
+  box-shadow: 0 0 20px rgba(21, 183, 185, 1);
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+  overflow: hidden;
+}
+
+/* Input box styling */
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: black;
+  font-size: medium;
+  font-weight: 700;
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+/* Placeholder styling */
+input::placeholder {
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+/* Button styling */
+button {
+  padding: 10px;
+  border: 3px solid #e6b7eca1;
+  border-radius: 6px;
+  background: transparent;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Container for filter buttons */
+.buttons-cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  backdrop-filter: blur(3px);
+}
+
+/* Special styling for add button */
+#addButton {
+  border: none;
+}
+
+/* Hover and active states for buttons */
+button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: cyan;
+}
+
+button#showAllButton:active, button#showCompletedButton:active {
+  background-color: #0069d9;
+}
+
+button#deleteAllButton:hover {
+  background-color: #dc3545;
+}
+
+button#deleteAllButton:active {
+  background-color: #bd2130;
+}
+
+button#showIncompleteButton:hover {
+  background-color: #0069d9;
+}
+
+button#showIncompleteButton:active {
+  background-color: #bd2130;
+}
+
+/* List styling */
+ul {
+  backdrop-filter: blur(7px);
+  border: 2px solid #e6b7eca1;
+  box-shadow: 0 0 20px rgba(21, 183, 185, 1);
+  border-radius: 8px;
+  list-style: none;
+  font-family: cursive;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 3px;
+}
+
+/* List item styling */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+  animation: slideIn 0.5s ease-out;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Container for task details */
+li .todo-details {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Task name styling */
+.todo-name {
+  font-size: medium;
+  color: whitesmoke;
+  font-family: cursive;
+  font-weight: 600;
+}
+
+/* Styling for completed tasks */
+.checked {
+  text-decoration: line-through;
+  color: red;
+}
+
+/* Timestamp styling */
+.timestamp {
+  font-size: 10px;
+  font-weight: 700;
+  color: greenyellow;
+  font-family: system-ui;
+}
+
+/* Edit button styling */
+button.edit {
+  background: transparent;
+  color: aqua;
+  padding: 4px;
+  font-size: 12px;
+}
+
+button.edit:hover {
+  background-color: #e0a800;
+}
+
+button.edit:active {
+  background-color: #d39e00;
+}
+
+/* Remove button styling */
+button.remove {
+  background: transparent;
+  color: aqua;
+  padding: 4px;
+  font-size: 12px;
+}
+
+button.remove:hover {
+  background-color: #c82333;
+}
+
+button.remove:active {
+  background-color: #bd2130;
+}
+
+.date-filter-cont {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.date-filter-cont input {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.date-filter-cont button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.date-filter-cont button:hover {
+  background-color: #0056b3;
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Animation for sliding in */
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .todo-container {
+      width: 90%;
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  .input-cont {
+      flex-direction: column;
+  }
+
+  input[type="text"] {
+      margin-bottom: 10px;
+      margin-right: 0;
+      font-size: 14px;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+  .buttons-cont {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  li {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 5px;
+  }
+
+  .todo-details {
+      margin-bottom: 10px;
+  }
+
+  .todo-name {
+      font-size: 14px;
+      font-family: 'Times New Roman', Times, serif; /* Changed font-family */
+  }
+
+  .timestamp {
+      font-size: 8px;
+  }
+
+  button {
+      padding: 8px;
+  }
+
+  ul {
+      max-height: 60vh; /* Limit height for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .todo-container {
+      width: 100%;
+      padding: 10px;
+  }
+
+  header h1 {
+      font-size: 20px;
+  }
+
+  input[type="text"], button {
+      width: 100%;
+  }
+
+  input[type="text"] {
+      font-size: 14px;
+      padding: 8px;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+  button {
+      padding: 8px;
+  }
+
+  .buttons-cont {
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+
+  .buttons-cont button {
+      width: 100%;
+      margin: 5px 0;
+  }
+
+  .todo-details, .edit, .remove {
+      width: 100%;
+  }
+
+  .edit, .remove {
+      margin-left: 0;
+      margin-top: 5px;
+  }
+
+  li {
+      padding: 10px;
+      font-size: small;
+  }
+
+  .todo-name {
+      font-family: 'Times New Roman', Times, serif; /* Changed font-family */
+  }
+
+  .timestamp {
+      font-size: 8px;
+  }
+
+  ul {
+      max-height: 50vh; /* Limit height for small screens */
+  }
+} 
