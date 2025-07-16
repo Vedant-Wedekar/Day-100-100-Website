@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visual Studio Hub - Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Segoe UI, sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #1b1b1b;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #1b1b1b;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #f2f2f2, #ffffff);
+      padding: 4rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    .btn {
+      background-color: #0066b8;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .hero img {
+      max-width: 500px;
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+      background-color: #f9f9f9;
+    }
+
+    .feature {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .feature h3 {
+      margin-bottom: 1rem;
+      color: #0066b8;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-content {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://visualstudio.microsoft.com/wp-content/themes/mscomsvs/images/vs-logo.svg" alt="VS Logo">
+      <span><strong>Visual Studio</strong></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Downloads</a></li>
+        <li><a href="#">Developer Tools</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Visual Studio Hub</h1>
+      <p>Discover powerful tools and services to build, debug, and deploy modern applications across platforms.</p>
+      <a href="#" class="btn">Download Visual Studio</a>
+    </div>
+    <img src="https://visualstudio.microsoft.com/wp-content/uploads/2023/11/hero-desktop-2022.png" alt="Hero Image">
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Build for Any Platform</h3>
+      <p>Use a wide range of tools and services to create applications for Windows, Linux, Android, iOS, and more.</p>
+    </div>
+    <div class="feature">
+      <h3>Integrated Debugging</h3>
+      <p>Powerful debugging tools built directly into Visual Studio make finding and fixing issues easier.</p>
+    </div>
+    <div class="feature">
+      <h3>Collaborate in Real Time</h3>
+      <p>Use Live Share to edit and debug code with teammates in real time from anywhere in the world.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Microsoft. All rights reserved. | Visual Studio Clone for Educational Purposes Only.
+  </footer>
+</body>
+</html>
