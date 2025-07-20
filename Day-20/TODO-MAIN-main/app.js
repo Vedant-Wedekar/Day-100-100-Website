@@ -87,6 +87,9 @@ input.addEventListener("keyup", e => {
   }
 });
 
+
+
+
 // Event listener for the / key to focus on the input
 document.addEventListener("keydown", e => {
   if (e.key === "/" && document.activeElement !== input) {
@@ -96,6 +99,9 @@ document.addEventListener("keydown", e => {
     showJumpToSearchMessage();
   }
 });
+
+
+
 
 // Event listener for the Add button to add a todo
 addButton.addEventListener("click", addTodo);
