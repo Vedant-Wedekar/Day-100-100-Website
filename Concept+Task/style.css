@@ -1,0 +1,26 @@
+.container{
+    height: 550px;
+    width: 350px;
+    border: 2px solid black ;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    background: #ed4040;
+}
+.s{
+    display: flex;
+}
+.ss{
+    display: flex;
+}
+
+.b1{
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.b3{
+    margin-right: 40px;
+}
