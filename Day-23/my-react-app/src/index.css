@@ -1,1 +1,15 @@
 @import "tailwindcss";
+.stf{
+  font-family: "Permanent Marker", cursive;
+  font-weight: 900;
+  font-style: normal;
+}.motu {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.idk{
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 900;
+  font-style: normal;
+}
