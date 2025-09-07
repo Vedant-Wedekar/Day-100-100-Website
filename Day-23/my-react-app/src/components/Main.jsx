@@ -1,8 +1,13 @@
 import React from 'react'
 import BG from '../assets/BG.jpg'
 import MO from '../assets/MODEL.png'
+import F1 from '../assets/f1.png'
+import F2 from '../assets/f2.png'
+import F3 from '../assets/f3.png'
+import Q from '../assets/Q.jpg'
 const Main = () => {
   return (
+    <div className="h-500 bg-[#FDFEF0]">
     <div  className='pt-10'      style={{
         backgroundImage: `url(${BG})`,
         backgroundSize: 'cover',
@@ -40,7 +45,7 @@ const Main = () => {
   </div>
 </div>
 
-<div className="motu text-white ml-90 mt-7 ">
+<div className="font-['MyFont'] text-white ml-90 mt-7 ">
  <div className="text-9xl text-shadow-lg"> MEET VITO</div>
  <div className="text-4xl ml-130 text-shadow-lg">The little hippo</div>
 </div>
@@ -54,18 +59,51 @@ const Main = () => {
       }}></div>
 
 
+                        {/* About section */}
 
 
+            <div className="About font-['MyFont'] grid justify-center text-center mt-40 ">
+            <div className="text-2xl text-border-blue">ABOUT</div>
+            <div className="flex text-7xl justify-center mt-5">
+              <h1>Once</h1> <h1 className='text-border ml-5'>abandoned</h1> <img className='w-20 ml-5' src={F1} /> <h1 className='ml-5'>in a cold</h1>
+            </div>
+           <div className="flex text-7xl justify-center mt-5">  
+             <h1 className='text-border'>shelter</h1>  <img className='w-20 ml-5' src={F2} />  <h1 className='ml-5'> , Vito waited—lonely</h1>
+            </div>
+          <div className="flex text-7xl justify-center mt-5">
+            <h1> but</h1>   <h1 className='text-border ml-5'> hopeful .</h1>   <img className='w-20 ml-5' src={F3 } />
+            </div>
+            </div>
 
 
+                          {/* Story  */}
+            <div className="Story">
+            <div className="words">
+              <div className="para">
+                <div className="p1">Until one rainy day, Celine walked in and everything changed. She saw more than a trembling pup she saw family.</div>
+                <div className="p2">Now Vito’s life is full of love, belly rubs, and endless tail wags. From shelter to superstar,
+Vito proves: every underdog has a shot at glory.</div>
+              </div>
+                            {/* Animated button  */}
+      <div className="bg-black w-29 h-12 rounded-4xl mt-[-13px]">
+        <div className="bg-white w-28 ml-[-px] h-11 rounded-4xl border-3 transition-transform duration-300 hover:translate-x-2 hover:translate-y-2 idk flex justify-center items-center">LEARN MORE</div>
+      </div>
+      </div>
 
+
+            <div className="pic">
+
+              <img className='rounded-2xl w-70'  src={Q} />
+            </div>
+
+            </div>
 
 
 
 
 
         
-      </div>
+      </div></div>
   )
 }
 
