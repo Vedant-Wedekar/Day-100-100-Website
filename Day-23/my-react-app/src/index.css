@@ -13,3 +13,22 @@
   font-weight: 900;
   font-style: normal;
 }
+/* @font-face{
+  font-family: 'MyFont';
+  src: url('./assets/fonts/Dog.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/fonts/Dog.woff2') format('woff2');
+}
+.text-border {
+  color: white; /* text color */
+  -webkit-text-stroke: 2px black; /* border thickness and color */
+}
+.text-border-blue {
+  color: white; /* text color */
+  -webkit-text-stroke: 2px rgb(128, 239, 251); /* border thickness and color */
+}
