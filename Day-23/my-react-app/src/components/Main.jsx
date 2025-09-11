@@ -77,13 +77,15 @@ const Main = () => {
 
 
                           {/* Story  */}
-            <div className="Story">
+            <div className="Story flex">
+
             <div className="words">
-              <div className="para">
+              <div className="para text-3xl w-20">
                 <div className="p1">Until one rainy day, Celine walked in and everything changed. She saw more than a trembling pup she saw family.</div>
                 <div className="p2">Now Vito’s life is full of love, belly rubs, and endless tail wags. From shelter to superstar,
 Vito proves: every underdog has a shot at glory.</div>
               </div>
+
                             {/* Animated button  */}
       <div className="bg-black w-29 h-12 rounded-4xl mt-[-13px]">
         <div className="bg-white w-28 ml-[-px] h-11 rounded-4xl border-3 transition-transform duration-300 hover:translate-x-2 hover:translate-y-2 idk flex justify-center items-center">LEARN MORE</div>
