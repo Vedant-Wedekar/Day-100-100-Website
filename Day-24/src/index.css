@@ -34,3 +34,11 @@
         transform: translateX(-100%);
     }
 }
+
+
+    .gradient-blob {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(80px);
+      pointer-events: none;
+    }
