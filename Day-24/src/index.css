@@ -42,3 +42,15 @@
       filter: blur(80px);
       pointer-events: none;
     }
+
+
+    .red{
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.blue {
+  font-family: "Indie Flower", cursive;
+  /* font-weight: 400; */
+  font-style: normal;
+}
