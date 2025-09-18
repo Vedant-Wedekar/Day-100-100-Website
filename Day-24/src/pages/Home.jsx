@@ -14,8 +14,18 @@ import { DrawCircleText } from '../components/elements/DrawCircleText'
 import CardSwap , { Card }  from '../components/elements/CardSwap'
 import ImageTrail from '../components/elements/ImageTrail' // import the variant key from '../components/elements/ImageTrail'
 import MagicBento from '../components/elements/MagicBento'
-
 import Para from '../components/elements/Para'
+
+
+import W1 from '../assets/Ass1.png'
+import W2 from '../assets/Ass2.png'
+import W3 from '../assets/Ass3.png'
+import W4 from '../assets/Ass4.png'
+import W5 from '../assets/Ass5.png'
+import W6 from '../assets/Ass6.png'
+import W7 from '../assets/Ass7.png'
+import W8 from '../assets/Ass8.png'
+
 const Home = () => {
  const [scale, setScale] = useState(1);
 const handleAnimationComplete = () => {
@@ -132,7 +142,7 @@ const handleAnimationComplete = () => {
 
 
 <div className="mt-40 mb-40">
-<div className=" text-6xl font-bold">Showcasing the Startup Spark</div>
+<div className=" text-6xl font-bold green">Showcasing the Startup Spark</div>
 <div className="text-2xl mt-5">We don’t just build projects, we build possibilities.
 Here’s a glimpse of dreams we’ve turned into design.</div>
 </div>
@@ -141,14 +151,14 @@ Here’s a glimpse of dreams we’ve turned into design.</div>
   <ImageTrail
     //  key={key}
     items={[
-      'https://picsum.photos/id/287/300/300',
-      'https://picsum.photos/id/1001/300/300',
-      'https://picsum.photos/id/1025/300/300',
-      'https://picsum.photos/id/1026/300/300',
-      'https://picsum.photos/id/1027/300/300',
-      'https://picsum.photos/id/1028/300/300',
-      'https://picsum.photos/id/1029/300/300',
-      'https://picsum.photos/id/1030/300/300',
+      W1,
+      W2,
+      W3,
+      W4,
+      W5,
+      W6,
+      W7,
+      W8,
       // ...
     ]}
     variant={1}
