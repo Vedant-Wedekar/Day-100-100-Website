@@ -751,6 +751,7 @@ class InfiniteGridMenu {
       instanceMatrixArray.set(mat4.create());
       this.discInstances.matrices.push(instanceMatrixArray);
     }
+    
     gl.bindVertexArray(this.discVAO);
     gl.bindBuffer(gl.ARRAY_BUFFER, this.discInstances.buffer);
     gl.bufferData(gl.ARRAY_BUFFER, this.discInstances.matricesArray.byteLength, gl.DYNAMIC_DRAW);
