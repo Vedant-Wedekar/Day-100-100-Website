@@ -5,17 +5,15 @@ import HomeBottomText from '../components/home/HomeBottomText'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import Cursor from '../components/elements/Cursor'
-// import { ScrollTrigger } from 'gsap/all'
 import { useEffect, useState } from 'react'
 import { ShiftingDropDown } from '../components/elements/ShiftingDropDown'
 import  CurvedLoop  from '../components/elements/CurvedLoop'
 import  BlurText  from '../components/elements/BlurText'
 import { DrawCircleText } from '../components/elements/DrawCircleText'
 import CardSwap , { Card }  from '../components/elements/CardSwap'
-import ImageTrail from '../components/elements/ImageTrail' // import the variant key from '../components/elements/ImageTrail'
+import ImageTrail from '../components/elements/ImageTrail' 
 import MagicBento from '../components/elements/MagicBento'
 import Para from '../components/elements/Para'
-
 
 import W1 from '../assets/Ass1.png'
 import W2 from '../assets/Ass2.png'
@@ -34,11 +32,6 @@ const handleAnimationComplete = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-
-      // Define scroll ranges:
-      // 0 -> scale 1
-      // 500 -> scale 2
-      // 1000 -> scale 1 again
       let newScale;
       if (scrollY <= 500) {
         newScale = 1 + scrollY / 500; // 1 → 2
@@ -51,57 +44,30 @@ const handleAnimationComplete = () => {
       setScale(newScale);
     };
 
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
-
-
-
-
-
-
   return (
-
-
     <div className='text-black'>
-
-{/* <ShiftingDropDown />   */}
-    
-    
+ 
       <div className='h-screen w-screen relative pb-5 overflow-hidden flex flex-col justify-between mt-50'>
         <HomeHeroText />
-          {/* <div
-    class="gradient-blob w-[600px] h-[700px] -left-40 -top-32"
-    style="background: radial-gradient(circle, #d5b1f4, transparent 70%);"
-    aria-hidden="true"></div>
-        */}
-
-</div>
-
-
+      </div>
       <div style={{
           transform: `scale(${scale})`,
           transition: "transform 0.1s ease-out",}} className='h-130 w-200 ml-90 rounded-2xl -mt-100'>
         <Video />
       </div> 
-
-
 <CurvedLoop 
-
   marqueeText=" ✦ Kickstart Your Journey  ✦ with ✦ Ready-to-Use Projects  ✦"
   speed={3}
   curveAmount={500}
   direction="right"
   interactive={true}
   className="custom-text-style -my-100"
-  
 />
-
      <div className="flex justify-center items-center">
-      
 
       <div className="align-center">
         <BlurText 
