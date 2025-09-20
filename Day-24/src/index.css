@@ -64,3 +64,11 @@
   padding: 0;
   box-sizing: border-box;
 } */
+
+@keyframes colorCycle {
+  0%   { color: #fca5a5; }  /* red-300 */
+  25%  { color: #93c5fd; }  /* blue-300 */
+  50%  { color: #86efac; }  /* green-300 */
+  75%  { color: #fde68a; }  /* yellow-300 */
+  100% { color: #fca5a5; }  /* back to red */
+}
