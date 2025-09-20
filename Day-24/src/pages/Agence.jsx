@@ -4,12 +4,9 @@ import { ScrollTrigger } from 'gsap/all'
 import { useRef } from 'react'
 
 const Agence = () => {
-
   gsap.registerPlugin(ScrollTrigger)
-
   const imageDivRef = useRef(null)
   const imageRef = useRef(null)
-
   const imageArray = [
     'https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg',
     'https://k72.ca/uploads/teamMembers/Olivier_480x640-480x640.jpg',
@@ -26,7 +23,6 @@ const Agence = () => {
     'https://k72.ca/uploads/teamMembers/MEGGIE_480X640_2-480x640.jpg',
     'https://k72.ca/uploads/teamMembers/joel_480X640_3-480x640.jpg',
   ]
-
   useGSAP(function () {
 
     gsap.to(imageDivRef.current, {
@@ -54,8 +50,6 @@ const Agence = () => {
       }
     })
   })
-
-
   return (
     <div className='parent'>
       <div id='page1' className='py-1 '>
@@ -73,7 +67,6 @@ const Agence = () => {
         </div>
       </div>
       <div id='page2' className=" h-screen">
-
       </div>
     </div>
   )
