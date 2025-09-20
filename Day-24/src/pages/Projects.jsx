@@ -4,8 +4,6 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import InfiniteMenu  from '../components/elements/InfiniteMenu'
 
-
-
 import W1 from '../assets/Ass1.png'
 import W2 from '../assets/Ass2.png'
 import W3 from '../assets/Ass3.png'
@@ -21,6 +19,7 @@ import W12 from '../assets/Ass12.png';
 import W13 from '../assets/Ass13.png';
 import W14 from '../assets/Ass14.png';
 import W15 from '../assets/Ass15.png';
+import { HoverImageLinks } from '../components/elements/HoverImageLinks'
 const items = [
  { image: W1, link: 'https://google.com/', title: 'Item 1', description: 'This is pretty cool, right?' , dp:'https://static.wikia.nocookie.net/the-lady-of-eldia/images/4/43/Eren_Jaeger_%28850%29.png/revision/latest?cb=20201217121151'}, 
   { image: W2, link: 'https://google.com/', title: 'Item 2', description: 'This is pretty cool, right?' },
@@ -38,11 +37,7 @@ const items = [
   { image: W14, link: 'https://google.com/', title: 'Item 14', description: 'This is pretty cool, right?' , dp:'https://static.wikia.nocookie.net/the-lady-of-eldia/images/4/43/Eren_Jaeger_%28850%29.png/revision/latest?cb=20201217121151'},
   { image: W15, link: 'https://google.com/', title: 'Item 15', description: 'This is pretty cool, right?' },
 ];
-
-
-
 const Projects = () => {
-
   const projects = [{
     image1: W2,
     image2: W4
@@ -53,10 +48,7 @@ const Projects = () => {
     image1:W5,
     image2: W6
   }]
-
-
   gsap.registerPlugin(ScrollTrigger)
-
   useGSAP(function () {
     gsap.from('.hero', {
       height: '100px',
@@ -71,11 +63,11 @@ const Projects = () => {
       }
     })
   })
-
   return (
-    <div className='lg:p-4 p-2 mb-[100vh]'>
+    <div className="">
+    <div className='lg:p-4 p-2'>
       <div className=' pt-[45vh]'>
-        <h2 className='font-[font2] lg:text-[9.5vw] text-7xl uppercase'>Projets</h2>
+        <h2 className='font-[font2] lg:text-[9.5vw] text-7xl uppercase'>Websites</h2>
       </div>
       <div className='-lg:mt-20 lol'>
         {projects.map(function (elem, idx) {
@@ -85,9 +77,13 @@ const Projects = () => {
         })}
 
       </div>
+      </div>
 <div className="m-0 p-0">
       <InfiniteMenu   items={items}/>
 </div>
+
+
+<HoverImageLinks />
     </div>
   )
 }
