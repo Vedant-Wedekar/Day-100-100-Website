@@ -17,6 +17,7 @@ import W12 from '../assets/Ass12.png';
 import W13 from '../assets/Ass13.png';
 import W14 from '../assets/Ass14.png';
 import W15 from '../assets/Ass15.png';
+import Lanyard from '../components/elements/Lanyard'
 const Agence = () => {
   gsap.registerPlugin(ScrollTrigger)
   const imageDivRef = useRef(null)
@@ -84,13 +85,19 @@ const Agence = () => {
                      <p className='lg:text-6xl text-xl leading-tight'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Notre curiosité nourrit notre créativité. On reste humbles et on dit non aux gros egos, même le vôtre. Une marque est vivante. Elle a des valeurs, une personnalité, une histoire. Si on oublie ça, on peut faire de bons chiffres à court terme, mais on la tue à long terme. C’est pour ça qu’on s’engage à donner de la perspective, pour bâtir des marques influentes.</p>
                     </div>
         </div>
-        
       </div>
+   <div className="">
 
+    <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
+   </div>
 {/* 
       <div id='page2' className=" h-screen">
 
       </div> */}
+
+      {/* <div className="w-300">
+<Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
+</div> */}
     </div>
   )
 }
