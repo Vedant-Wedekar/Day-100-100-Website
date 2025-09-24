@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: font1;
+    src: url(../public/fonts/Lausanne-300.woff2);
+}
+@font-face {
+    font-family: font2;
+    src: url(../public/fonts/Lausanne-500.woff2);
+}
+
+
+.moveX{
+    animation-name: moveAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.moveLink{
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.link:hover .moveLink{
+    opacity: 1;
+}
+
+@keyframes moveAnimation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+    .gradient-blob {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(80px);
+      pointer-events: none;
+    }
+
+
+    .red{
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.blue {
+  font-family: "Indie Flower", cursive;
+  /* font-weight: 400; */
+  font-style: normal;
+}
+.green {
+  font-family: "Playwrite ES", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+@keyframes colorCycle {
+  0%   { color: #fca5a5; }  /* red-300 */
+  25%  { color: #93c5fd; }  /* blue-300 */
+  50%  { color: #86efac; }  /* green-300 */
+  75%  { color: #fde68a; }  /* yellow-300 */
+  100% { color: #fca5a5; }  /* back to red */
+}

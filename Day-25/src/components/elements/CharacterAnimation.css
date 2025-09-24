@@ -1,0 +1,31 @@
+/* basic page layout (imitates your original) */
+.page {
+  /* font-family:red; */
+  /* background: #111; */
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  font-size: 50px;
+}
+
+/* important: the container and characters must hide overflow */
+[data-animate] {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1.1;
+}
+
+.char {
+  display: inline-block;
+  overflow: hidden;
+}
+    .red{
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
