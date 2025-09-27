@@ -17,6 +17,7 @@ import W12 from '../assets/Ass12.png';
 import W13 from '../assets/Ass13.png';
 import W14 from '../assets/Ass14.png';
 import W15 from '../assets/Ass15.png';
+import ProfileCard from '../components/elements/ProfileCard'
 // import Lanyard from '../components/elements/Lanyard'
 const Agence = () => {
   gsap.registerPlugin(ScrollTrigger)
@@ -78,19 +79,32 @@ const Agence = () => {
 
         <div className='relative font-[font2]'>
                     <div className='lg:mt-[38vh] mt-[30vh]'>
-                      <h1 className='text-[20vw] text-center uppercase leading-[18vw]'>Soixan7e <br />
-                            Douze</h1>
+                      <h1 className='text-[18vw] text-center uppercase leading-[18vw]'>Creative<br />
+                            Crew</h1>
                     </div>
-                       <div className='lg:pl-[40%] lg:mt-20 mt-4 p-3'>
-                     <p className='lg:text-6xl text-xl leading-tight'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Notre curiosité nourrit notre créativité. On reste humbles et on dit non aux gros egos, même le vôtre. Une marque est vivante. Elle a des valeurs, une personnalité, une histoire. Si on oublie ça, on peut faire de bons chiffres à court terme, mais on la tue à long terme. C’est pour ça qu’on s’engage à donner de la perspective, pour bâtir des marques influentes.</p>
+                       <div className='lg:pl-[50%]  lg:mt-20 mt-4 p-3'>
+                     <p className='lg:text-6xl text-xl leading-tight'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We’re not just an agency; we’re a collective of dreamers, designers, and developers who believe every idea deserves a digital stage. Our crew thrives on creativity and collaboration, blending modern design with smart technology to craft websites that don’t just look good but truly connect with people.</p>
                     </div>
         </div>
       </div>
+        <div
+        className="gradient-blob w-[400px] h-[700px] -left-40   mt-200  -top-32"
+        style={{
+          background: "radial-gradient(circle, #dcf5fa, transparent 70%)",
+        }}
+        aria-hidden="true"
+      ></div>
    <div className="">
-
+  <div
+        className="gradient-blob w-[500px] h-[600px] mt-250 right-[-10rem] top-80"
+        style={{
+          background: "radial-gradient(circle, #d5f7e0, transparent 70%)",
+        }}
+        aria-hidden="true"
+      ></div>
     {/* <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} /> */}
    </div>
-{/* 
+{/* cd
       <div id='page2' className=" h-screen">
 
       </div> */}
@@ -98,6 +112,24 @@ const Agence = () => {
       {/* <div className="w-300">
 <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
 </div> */}
+
+
+
+{/* <div className="mt-100 ml-100">bchdbhfbsdhhbfsd</div> */}
+ <div className=" w-100 ">
+<ProfileCard
+  name="Vedant Wedekar"
+  title="Web Developer"
+  handle="Code_Ved"
+  status="Online"
+  contactText="Contact Me"
+  avatarUrl="../src/assets/model1.png"
+  showUserInfo={true}
+  enableTilt={true}
+  enableMobileTilt={false}
+  onContactClick={() => console.log('Contact clicked')}
+/>
+</div>
     </div>
   )
 }
