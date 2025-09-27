@@ -18,6 +18,8 @@ import W13 from '../assets/Ass13.png';
 import W14 from '../assets/Ass14.png';
 import W15 from '../assets/Ass15.png';
 import ProfileCard from '../components/elements/ProfileCard'
+import CircularText1 from '../components/elements/CircularText1'
+import Folder from '../components/elements/Folder'
 // import Lanyard from '../components/elements/Lanyard'
 const Agence = () => {
   gsap.registerPlugin(ScrollTrigger)
@@ -114,9 +116,107 @@ const Agence = () => {
 </div> */}
 
 
+<div className="flex">
+<div className="mt-70 text-5xl font-[font2] font-extrabold ml-50 z-999">LETS MEET OUR SQUAD</div>
+<CircularText1
 
-{/* <div className="mt-100 ml-100">bchdbhfbsdhhbfsd</div> */}
+  text="REACT*BITS*COMPONENTS*"
+  onHover="speedUp"
+  spinDuration={10}
+  className="custom-class mt-50 -ml-25"
+/>
+
+<div className="flex items-center justify-center mr-70 mt-70">
+  <Folder size={2} color="#ead4fc" className="custom-folder"  
+ items={[
+    <div
+      className="w-full h-full bg-cover bg-center rounded-lg"
+      style={{ backgroundImage: "url('https://picsum.photos/200/300?random=1')" }}
+    />,
+    <div
+      className="w-full h-full bg-cover bg-center rounded-lg"
+      style={{ backgroundImage: "url('https://picsum.photos/200/300?random=2')" }}
+    />,
+    <div
+      className="w-full h-full bg-cover bg-center rounded-lg"
+      style={{ backgroundImage: "url('https://picsum.photos/200/300?random=3')" }}
+    />,
+  ]}
+  />
+</div>
+</div>
+
+
+
+<div className="font-[font2] p-10 text-xl"> We’re not just an agency; we’re a collective of dreamers, designers, and developers who believe every idea deserves a digital stage. Our crew thrives on creativity and collaboration, blending modern design with smart technology to craft websites that don’t just look good but truly connect with people.</div>
+
+
+
+
+
+
+{/* First  Group  */}
+
+<div className="flex justify-between px-10 py-10">
  <div className=" w-100 ">
+<ProfileCard
+  name="Rehan Patel"
+  title="Presentation Designer & Research Assistant"
+  handle="Rehan-the-dev"
+  status="OFFLINE"
+  contactText="Contact Me"
+  avatarUrl="../src/assets/model1.png"
+  showUserInfo={true}
+  enableTilt={true}
+  enableMobileTilt={false}
+   onContactClick={() => window.open("https://github.com/Rehan-the-dev", "_blank")}
+/>
+</div> <div className=" w-100">
+<ProfileCard
+  name="Vedant Wedekar"
+  title="Project Maneger & Lead Developer"
+  handle="Code_Ved"
+  status="Online"
+  contactText="Contact Me"
+  avatarUrl="../src/assets/model1.png"
+  showUserInfo={true}
+  enableTilt={true}
+  enableMobileTilt={false}
+   onContactClick={() => window.open("https://github.com/Rehan-the-dev", "_blank")}
+/>
+</div> <div className=" w-100 ">
+<ProfileCard
+  name="Anushka Chute"
+  title="Research Lead & Thesis Writer"
+  handle="Code_Ved"
+  status="Online"
+  contactText="Contact Me"
+  avatarUrl="../src/assets/model1.png"
+  showUserInfo={true}
+  enableTilt={true}
+  enableMobileTilt={false}
+   onContactClick={() => window.open("https://github.com/Rehan-the-dev", "_blank")}
+/>
+</div></div>
+
+
+{/* Second Group  */}
+
+<div className="flex justify-between px-10 py-10">
+ <div className=" w-100 ">
+<ProfileCard
+  name="Palak Kale"
+  title="Documentation Specialist & Content Writer"
+  handle="Code_Ved"
+  status="Online"
+  contactText="Contact Me"
+  avatarUrl="../src/assets/model1.png"
+  showUserInfo={true}
+  enableTilt={true}
+  enableMobileTilt={false}
+   onContactClick={() => window.open("https://github.com/Rehan-the-dev", "_blank")}
+/>
+</div> <div className=" w-100">
 <ProfileCard
   name="Vedant Wedekar"
   title="Web Developer"
@@ -127,9 +227,44 @@ const Agence = () => {
   showUserInfo={true}
   enableTilt={true}
   enableMobileTilt={false}
-  onContactClick={() => console.log('Contact clicked')}
+   onContactClick={() => window.open("https://github.com/Rehan-the-dev", "_blank")}
 />
-</div>
+</div> <div className=" w-100 ">
+<ProfileCard
+  name="Prachi "
+  title="Reviewer & Feedback"
+  handle="Code_Ved"
+  status="Online"
+  contactText="Contact Me"
+  avatarUrl="../src/assets/model1.png"
+  showUserInfo={true}
+  enableTilt={true}
+  enableMobileTilt={false}
+   onContactClick={() => window.open("https://github.com/Rehan-the-dev", "_blank")}
+/>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   )
 }
