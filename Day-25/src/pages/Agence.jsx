@@ -20,6 +20,7 @@ import W15 from '../assets/Ass15.png';
 import ProfileCard from '../components/elements/ProfileCard'
 import CircularText1 from '../components/elements/CircularText1'
 import Folder from '../components/elements/Folder'
+import Rehan from '../components/elements/Rehan'
 // import Lanyard from '../components/elements/Lanyard'
 const Agence = () => {
   gsap.registerPlugin(ScrollTrigger)
@@ -116,17 +117,31 @@ const Agence = () => {
 </div> */}
 
 
+<Rehan />
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div className="flex">
-<div className="mt-70 text-5xl font-[font2] font-extrabold ml-50 z-999">LETS MEET OUR SQUAD</div>
+<div className=" flex mt-70 text-[60px] font-[font2] font-extrabold ml-50 z-999">LETS INTRODUCE OUR   <div className="ml-12">SQUAD</div></div>
 <CircularText1
 
   text="REACT*BITS*COMPONENTS*"
   onHover="speedUp"
   spinDuration={10}
-  className="custom-class mt-50 -ml-25"
+  className="custom-class mt-43 -ml-64"
 />
 
-<div className="flex items-center justify-center mr-70 mt-70">
+<div className="flex items-center justify-center mr-50 mt-70">
   <Folder size={2} color="#ead4fc" className="custom-folder"  
  items={[
     <div
@@ -148,11 +163,69 @@ const Agence = () => {
 
 
 
-<div className="font-[font2] p-10 text-xl"> We’re not just an agency; we’re a collective of dreamers, designers, and developers who believe every idea deserves a digital stage. Our crew thrives on creativity and collaboration, blending modern design with smart technology to craft websites that don’t just look good but truly connect with people.</div>
+{/* <div className="font-[font2] p-10 text-xl">
+  Welcome to our dream team a chaotic squad that somehow survived Own Conflicts,  deadlines, caffeine shortages, and each other’s questionable talents , Some also Don't have  Any .
 
+First up, our OLED screen lover boy—he makes PowerPoints so beautiful they could hang in an art gallery. Sadly, no one ever watches them long enough, which breaks his poor pixel-loving heart.
 
+Next, the overrated coder a.k.a.  Lead Developer (self-declared, of course). His coding style is a perfect blend of Ctrl+C, Ctrl+V and blind optimism. Don’t ask us why people love his work—maybe it’s luck, maybe it’s Black Magic, but hey, confidence sells.
 
+Then comes Miss Perfectionist—she loves perfection so much that if her own project isn’t flawless, she’ll happily reject it herself. She’s the thesis queen, the typo hunter, and the person who “slightly” corrects your PPT with the intensity of a brain surgeon.
 
+Our coconut tree—hard outside, soft inside, and taller than most of our ambitions. She’s the Documentation Specialist & Content Writer, which basically means she turns our late-night chaos into “professional” flowcharts and user flows. Without her, we’d just have excuses and memes.
+
+And finally, Member 5 & Member 6—the  duo. Honestly, we don’t know much about these two mother—uh, legends. They’re like NPCs in a game: always noticed, rarely present, but every once in a while they surprisely At time .
+     
+     </div> */}
+
+<div className="font-[font2] p-10 text-xl space-y-4 leading-relaxed text-gray-800">
+
+  <p className="animate-fadeIn font-extrabold text-2xl   ">
+    Welcome to our <span className="font-semibold text-indigo-600">dream team</span> — 
+    a chaotic squad that somehow survived deadlines, caffeine shortages, and 
+    each other’s questionable talents. Some also don’t have any. 🙂
+  </p>
+
+  <p className="hover:scale-105 transition-transform duration-300 px-20">
+    First up, our <span className="text-pink-500">OLED screen lover boy</span> — 
+    he makes PowerPoints so beautiful they could hang in an art gallery. 
+    Sadly, no one ever watches them long enough, which breaks his poor 
+    pixel-loving heart.
+  </p>
+
+  <p className="hover:scale-105 transition-transform duration-300 px-20">
+    Next, the <span className="font-bold text-green-600">overrated coder</span> 
+    a.k.a. <i>Lead Developer</i> (self-declared, of course). His coding style is a 
+    perfect blend of <code>Ctrl+C</code>, <code>Ctrl+V</code>, and blind optimism. 
+    Don’t ask us why people love his work — maybe it’s luck, maybe it’s black 
+    magic, but hey, confidence sells.
+  </p>
+
+  <p className="hover:scale-105 transition-transform duration-300 px-20">
+    Then comes <span className="text-red-500">Miss Perfectionist</span> — she loves 
+    perfection so much that if her own project isn’t flawless, she’ll happily 
+    reject it herself. She’s the thesis queen, the typo hunter, and the person 
+    who “slightly” corrects your PPT with the intensity of a brain surgeon.
+  </p>
+
+  <p className="hover:scale-105 transition-transform duration-300 px-20">
+    Our <span className="text-yellow-600">coconut tree</span> — hard outside, soft inside, 
+    and taller than most of our ambitions 🌴. She’s the Documentation Specialist & 
+    Content Writer, which basically means she turns our late-night chaos into 
+    “professional” flowcharts and user flows. Without her, we’d just have 
+    excuses and memes.
+  </p>
+
+  <p className="hover:scale-105 transition-transform duration-300 px-20">
+    And finally, <span className="text-indigo-500">Member 5 & Member 6</span> — the duo. 
+    Honestly, we don’t know much about these two mother—uh, legends. They’re like 
+    NPCs in a game: always noticed, rarely present, but every once in a while 
+    they surprise us at the most random times.
+  </p>
+
+</div>
+
+<div className="text-[60px] font-[font2] font-extrabold ml-30">LETS  <div className="">MEET</div>  THEM . </div>
 
 
 {/* First  Group  */}
@@ -175,27 +248,27 @@ const Agence = () => {
 <ProfileCard
   name="Vedant Wedekar"
   title="Project Maneger & Lead Developer"
-  handle="Code_Ved"
-  status="Online"
+  handle="TG_VED"
+  status="ONLINE"
   contactText="Contact Me"
   avatarUrl="../src/assets/model1.png"
   showUserInfo={true}
   enableTilt={true}
   enableMobileTilt={false}
-   onContactClick={() => window.open("https://github.com/Rehan-the-dev", "_blank")}
+   onContactClick={() => window.open("https://github.com/Vedant-Wedekar", "_blank")}
 />
 </div> <div className=" w-100 ">
 <ProfileCard
   name="Anushka Chute"
   title="Research Lead & Thesis Writer"
-  handle="Code_Ved"
-  status="Online"
+  handle="AC chalado Koi"
+  status="ONLINE"
   contactText="Contact Me"
   avatarUrl="../src/assets/model1.png"
   showUserInfo={true}
   enableTilt={true}
   enableMobileTilt={false}
-   onContactClick={() => window.open("https://github.com/Rehan-the-dev", "_blank")}
+   onContactClick={() => window.open("https://github.com/ANUSHKA-CHUTE", "_blank")}
 />
 </div></div>
 
@@ -207,34 +280,34 @@ const Agence = () => {
 <ProfileCard
   name="Palak Kale"
   title="Documentation Specialist & Content Writer"
-  handle="Code_Ved"
-  status="Online"
+  handle="IDK"
+  status="ONLINE"
   contactText="Contact Me"
   avatarUrl="../src/assets/model1.png"
   showUserInfo={true}
   enableTilt={true}
   enableMobileTilt={false}
-   onContactClick={() => window.open("https://github.com/Rehan-the-dev", "_blank")}
+   onContactClick={() => window.open("https://www.instagram.com/_palakkale_/?hl=en", "_blank")}
 />
 </div> <div className=" w-100">
 <ProfileCard
-  name="Vedant Wedekar"
-  title="Web Developer"
-  handle="Code_Ved"
-  status="Online"
+  name="Prajakta Kohli  "
+  title="IDK"
+  handle="IDK"
+  status="ONLINE"
   contactText="Contact Me"
   avatarUrl="../src/assets/model1.png"
   showUserInfo={true}
   enableTilt={true}
   enableMobileTilt={false}
-   onContactClick={() => window.open("https://github.com/Rehan-the-dev", "_blank")}
+   onContactClick={() => window.open("https://www.instagram.com/prajakta_09__/?hl=en", "_blank")}
 />
 </div> <div className=" w-100 ">
 <ProfileCard
   name="Prachi "
   title="Reviewer & Feedback"
-  handle="Code_Ved"
-  status="Online"
+  handle="IDK"
+  status="ONLINE"
   contactText="Contact Me"
   avatarUrl="../src/assets/model1.png"
   showUserInfo={true}
