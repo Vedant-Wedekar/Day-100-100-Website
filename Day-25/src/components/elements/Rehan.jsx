@@ -50,7 +50,7 @@ function Rehan() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+    <div className="min-h-screen rounded-2xl flex items-center justify-center p-4 font-[font2] mt-50">
       <div className="bg-white w-full max-w-6xl p-8 rounded-xl shadow-lg grid grid-cols-1 md:grid-cols-2 gap-10">
         
         {/* Left Side: Heading */}
@@ -63,88 +63,136 @@ function Rehan() {
           </p>
         </div>
 
-        {/* Right Side: Form */}
-        <form className="space-y-6" onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="name" className="block font-semibold text-gray-700 mb-1">Name</label>
-            <input
-              id="name"
-              type="text"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Your full name"
-            />
-          </div>
 
-          <div>
-            <label htmlFor="email" className="block font-semibold text-gray-700 mb-1">Email</label>
-            <input
-              id="email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="you@example.com"
-            />
-          </div>
 
-          <div>
-            <label htmlFor="company" className="block font-semibold text-gray-700 mb-1">Company / Startup / Brand Name</label>
-            <input
-              id="company"
-              type="text"
-              value={formData.company}
-              onChange={handleChange}
-              required
-              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Your company or brand"
-            />
-          </div>
+{/* Right Side: Form */}
+<form
+  className="space-y-4 w-130 px-20 py-10 rounded-[30px] shadow-2xl bg-[#edf5fc] 
+             animate-fadeInUp transition-all duration-700 ease-out"
+  onSubmit={handleSubmit}
+>
+  {/* Name */}
+  <div className="transition-all duration-500 hover:scale-[1.01] ">
+    <label htmlFor="name" className="block font-semibold text-gray-700 mb-1">
+      Your Name
+    </label>
+    <input
+      id="name"
+      type="text"
+      value={formData.name}
+      onChange={handleChange}
+      required
+      className="w-full border-0 border-b-2 border-gray-300 rounded-[10px] p-3  
+                 focus:outline-none focus:ring-2 focus:ring-blue-500 
+                 transition-all duration-300 ease-in-out
+                 hover:shadow-md "
+      placeholder="Your full name"
+    />
+  </div>
 
-          <div>
-            <label htmlFor="link" className="block font-semibold text-gray-700 mb-1">Website Link / References</label>
-            <input
-              id="link"
-              type="url"
-              value={formData.link}
-              onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="https://example.com"
-            />
-          </div>
+  {/* Email */}
+  <div className="transition-all duration-500 hover:scale-[1.01]">
+    <label htmlFor="email" className="block font-semibold text-gray-700 mb-1">
+      Email
+    </label>
+    <input
+      id="email"
+      type="email"
+      value={formData.email}
+      onChange={handleChange}
+      required
+      className="w-full  border-gray-300 rounded-[20px] p-3  border-0 border-b-2 
+                 focus:outline-none focus:ring-2 focus:ring-blue-500 
+                 transition-all duration-300 ease-in-out
+                 hover:shadow-md"
+      placeholder="you@example.com"
+    />
+  </div>
 
-          <div>
-            <label htmlFor="brief" className="block font-semibold text-gray-700 mb-1">Brief of Existing Website</label>
-            <textarea
-              id="brief"
-              value={formData.brief}
-              onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Describe your current website or idea"
-            ></textarea>
-          </div>
+  {/* Company */}
+  <div className="transition-all duration-500 hover:scale-[1.01]">
+    <label htmlFor="company" className="block font-semibold text-gray-700 mb-1">
+      Company / Startup / Brand Name
+    </label>
+    <input
+      id="company"
+      type="text"
+      value={formData.company}
+      onChange={handleChange}
+      required
+     className="w-full  border-gray-300 rounded-[20px] p-3  border-0 border-b-2 
+                 focus:outline-none focus:ring-2 focus:ring-blue-500 
+                 transition-all duration-300 ease-in-out
+                 hover:shadow-md"
+      placeholder="Your company or brand"
+    />
+  </div>
 
-          <div>
-            <label htmlFor="future" className="block font-semibold text-gray-700 mb-1">Future Plan</label>
-            <textarea
-              id="future"
-              value={formData.future}
-              onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="What’s your vision for the future?"
-            ></textarea>
-          </div>
+  {/* Website Link */}
+  <div className="transition-all duration-500 hover:scale-[1.01]">
+    <label htmlFor="link" className="block font-semibold text-gray-700 mb-1">
+      Website Link / References
+    </label>
+    <input
+      id="link"
+      type="url"
+      value={formData.link}
+      onChange={handleChange}
+     className="w-full  border-gray-300 rounded-[20px] p-3  border-0 border-b-2 
+                 focus:outline-none focus:ring-2 focus:ring-blue-500 
+                 transition-all duration-300 ease-in-out
+                 hover:shadow-md"
+      placeholder="https://example.com"
+    />
+  </div>
 
-          <button
-            type="submit"
-            className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors"
-          >
-            Submit Idea
-          </button>
-        </form>
+  {/* Brief */}
+  <div className="transition-all duration-500 hover:scale-[1.01]">
+    <label htmlFor="brief" className="block font-semibold text-gray-700 mb-1">
+      Brief of Existing Website
+    </label>
+    <textarea
+      id="brief"
+      value={formData.brief}
+      onChange={handleChange}
+      className="w-full  border-gray-300 rounded-[20px] p-3  border-0 border-b-2 
+                 focus:outline-none focus:ring-2 focus:ring-blue-500 
+                 transition-all duration-300 ease-in-out
+                 hover:shadow-md"
+      placeholder="Describe your current website or idea"
+    ></textarea>
+  </div>
+
+  {/* Future Plan */}
+  <div className="transition-all duration-500 hover:scale-[1.01]">
+    <label htmlFor="future" className="block font-semibold text-gray-700 mb-1">
+      Future Plan
+    </label>
+    <textarea
+      id="future"
+      value={formData.future}
+      onChange={handleChange}
+     className="w-full  border-gray-300 rounded-[20px] p-3  border-0 border-b-2 
+                 focus:outline-none focus:ring-2 focus:ring-blue-500 
+                 transition-all duration-300 ease-in-out
+                 hover:shadow-md"
+      placeholder="What’s your vision for the future?"
+    ></textarea>
+  </div>
+
+  {/* Button */}
+  <button
+    type="submit"
+    className="w-50 ml-22 bg-blue-600 text-white font-semibold py-3 
+               rounded-[20px] shadow-md 
+               hover:bg-blue-700 hover:scale-105 
+               active:scale-95 
+               transition-all duration-300 ease-in-out"
+  >
+    Submit Idea
+  </button>
+</form>
+
       </div>
     </div>
   )
