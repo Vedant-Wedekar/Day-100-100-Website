@@ -475,7 +475,9 @@ export const LaserFlow = ({
       mount.removeChild(renderer.domElement);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [
+  },
+  
+  [
     wispDensity,
     dpr,
     mouseSmoothTime,
