@@ -8,7 +8,7 @@ import R from '../../assets/R.png'
 import V from '../../assets/V.png'
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
-const DEFAULT_GLOW_COLOR = "132, 0, 255";
+const DEFAULT_GLOW_COLOR = "194, 255, 238";
 const MOBILE_BREAKPOINT = 768;
 const cardData = [
   {
@@ -288,8 +288,8 @@ const ParticleCard = ({
       const ripple = document.createElement("div");
       ripple.style.cssText = `
         position: absolute;
-        width: ${maxDistance * 2}px;
-        height: ${maxDistance * 2}px;
+        width: ${maxDistance * 4}px;
+        height: ${maxDistance * 6}px;
         border-radius: 50%;
         background: radial-gradient(circle, rgba(${glowColor}, 0.4) 0%, rgba(${glowColor}, 0.2) 30%, transparent 70%);
         left: ${x - maxDistance}px;
@@ -548,7 +548,7 @@ const MagicBento = ({
             --glow-intensity: 0;
             --glow-radius: 200px;
             --glow-color: ${glowColor};
-            --border-color: #392e4e;
+            --border-color: #aff5fa;
             --background-dark: #060010;
             --white: hsl(0, 0%, 100%);
             --purple-primary: rgba(132, 0, 255, 1);
@@ -701,7 +701,7 @@ const MagicBento = ({
   "--glow-x": "50%",
   "--glow-y": "50%",
   "--glow-intensity": "0",
-  "--glow-radius": "200px",
+  "--glow-radius": "400px",
 };
 
             if (enableStars) {
