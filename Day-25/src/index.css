@@ -19,6 +19,10 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+.play {
+  font-family: "Shadows Into Light", cursive;
+  font-style: normal;
+}
 
 .moveLink{
     opacity: 0;
