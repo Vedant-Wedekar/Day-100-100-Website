@@ -38,9 +38,9 @@ export default function Para() {
   }, []);
 
   return (
-    <div className="page blue " ref={containerRef}>
-      <h1 className="blue" data-animate>At Studio Nexa, we believe every idea deserves</h1>
-      <p data-animate>a strong digital foundation.</p>
+    <div className="page w-320 h-40 py-10 bg-[#d2f7e9] rounded-[100px] " ref={containerRef}>
+      <h1 className="font-[font2] text-[#0f172a]" data-animate>At Studio Nexa, we believe every idea deserves</h1>
+      <p data-animate className="font-[font2] text-black">a strong digital foundation.</p>
     </div>
   );
 }
