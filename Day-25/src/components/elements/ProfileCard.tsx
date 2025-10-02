@@ -2,11 +2,6 @@
   import './ProfileCard.css';
 
   interface ProfileCardProps {
-    // children?: React.ReactNode;
-    // onClick?: () => void;
-
-
-
     avatarUrl: string;
     iconUrl?: string;
     grainUrl?: string;
@@ -61,9 +56,9 @@
     enableMobileTilt = false,
     mobileTiltSensitivity = 5,
     miniAvatarUrl,
-    name = 'Javi A. Torres',
-    title = 'Software Engineer',
-    handle = 'javicodes',
+    name = 'Vedant Wedekar',
+    title = 'SDE Intern',
+    handle = '',
     status = 'Online',
     contactText = 'Contact',
     showUserInfo = true,
