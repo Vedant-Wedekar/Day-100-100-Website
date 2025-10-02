@@ -161,8 +161,8 @@ const Nub = ({ selected }) => {
 
 const Products = () => {
   return (
-    <div>
-      <div className="flex gap-4">
+    <div className="">
+      <div className="flex gap-4 ">
         <div>
           <h3 className="mb-2 text-sm font-medium">Startup</h3>
           <a href="#" className="mb-1 block text-sm text-neutral-400">
