@@ -8,11 +8,6 @@ const FullScreenNav = () => {
     const fullScreenRef = useRef(null)
 
     const [navOpen, setNavOpen] = useContext(NavbarContext)
-
-
-
-
-
     function gsapAnimation() {
         const tl = gsap.timeline()
         tl.to('.fullscreennav', {
@@ -102,15 +97,16 @@ const FullScreenNav = () => {
                     </div>
                 </div>
                 <div className=' py-36'>
-                    <div className='link origin-top relative border-t-1 border-white'>
+                    <div  className='link origin-top relative border-t-1 border-white'>
                         <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Projets</h1>
                         <div className='moveLink absolute text-white flex top-0 bg-gradient-to-t from-sky-400 from-50% via-cyan-500 to-teal-400 to-50%" '>
-                            <div className='moveX flex items-center'>
+                            <div className='moveX flex items-center'   onClick={() => navigate("/projects")}>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Creations</h2>
                                 <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg" alt="" />
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Made by Us</h2>
                                 <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg" alt="" />
                             </div>
+
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Creations</h2>
                                 <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg" alt="" />

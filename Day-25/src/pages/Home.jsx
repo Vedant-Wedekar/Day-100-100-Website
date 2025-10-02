@@ -25,6 +25,10 @@ import W7 from '../assets/Ass7.png'
 import W8 from '../assets/Ass8.png'
 import ShinyText from '../components/elements/ShinyText'
 
+
+
+
+
 const Home = () => {
  const [scale, setScale] = useState(1);
 const handleAnimationComplete = () => {
@@ -65,9 +69,11 @@ const handleAnimationComplete = () => {
 <div className="border-2 mt-20 ml-15 mr-15 py-10 shadow-2xl  rounded-[100px]">
 
 
+
+
 <div className="bg-black w-[700px] h-[130px] rounded-4xl flex justify-center items-center font-[font2] text-[50px] ml-90 gap-4">
   <ShinyText
-    text="Just some shiny text!"
+    text="UNDERSTAND US"
     disabled={false}
     speed={5}
     className="custom-class"
@@ -114,7 +120,7 @@ const handleAnimationComplete = () => {
         <div className="font-[font2] text-5xl py-2"> Every big  startup</div>
         <BlurText 
   text=" begins with a small step, and Studio Nexa is here to make your
-   first step stronger. We provide ready-to-use, attractive, and functional web projects
+   first step stronger. We provide ready-to-use, attractive web projects
     designed especially for students, aspiring entrepreneurs, and small businesses.
     No hassle, no delays — just simple, affordable, and effective solutions that help you 
     showcase your vision to the world. Whether you’re starting your journey or looking to
@@ -146,15 +152,25 @@ const handleAnimationComplete = () => {
 /></div>
 
 
- 
 
-<Para  className="" />
- <div className="flex justify-center px-8">
+ <div className="bg-black w-370 h-220 ml-5 pt-20 rounded-[70px]">
+<div className="ml-29  mb-10  ">
+<Para className="" /></div>
+ <div className="flex justify-center px-8 font-[font2]">
    <MagicBento />
-   <div className="w-200 flex justify-center items-center text-2xl font-medium red">
-    <div className="">Our bento grid showcases not just the websites we craft, but the values that power them — creativity, teamwork, client understanding, and real-world experience. Each tile tells a story: from ready-to-use web designs to the passion of our team and the trust we build with every founder. Together, they represent the essence of Studio Nexa — <h1 className="">turning startup dreams into digital reality.</h1></div>
+   <div className="w-200 flex justify-center items-center text-white text-2xl font-medium red">
+    <div className="font-[font2]">
+      <div className="font-[font2] font-extrabold text-3xl"> Our Bento Grid </div>
+     showcases not just the websites we
+       craft, but the values that power them — creativity, teamwork, client understanding,
+        and real-world experience. Each tile tells a story: from ready-to-use web designs
+         to the passion of our team and the trust we build with every founder. Together,
+          they represent the essence of Studio Nexa — 
+          <h1 className="font-[font2] font-extrabold text-3xl">Turning startup dreams into digital reality.</h1></div>
    </div>
  </div>
+</div>
+
 
 
 <div className="mt-40 mb-40">
@@ -162,6 +178,8 @@ const handleAnimationComplete = () => {
 <div className="text-2xl mt-5">We don’t just build projects, we build possibilities.
 Here’s a glimpse of dreams we’ve turned into design.</div>
 </div>
+
+
 
 <div className='' style={{ height: '500px', position: 'relative', overflow: 'hidden'}}>
   <ImageTrail

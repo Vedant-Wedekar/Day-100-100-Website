@@ -23,6 +23,7 @@ import ProfileCard from '../components/elements/ProfileCard'
 import CircularText1 from '../components/elements/CircularText1'
 import Folder from '../components/elements/Folder'
 import Rehan from '../components/elements/Rehan'
+import { RevealLinks } from '../components/elements/RevealLinks'
 // import Lanyard from '../components/elements/Lanyard'
 const Agence = () => {
   gsap.registerPlugin(ScrollTrigger)
@@ -99,6 +100,22 @@ const Agence = () => {
         }}
         aria-hidden="true"
       ></div>
+      
+       <div
+        className="gradient-blob w-[300px] h-[700px] -left-40   mt-1440  -top-32"
+        style={{
+          background: "radial-gradient(circle, #fccce5, transparent 90%)",
+        }}
+        aria-hidden="true"
+      ></div>
+ <div
+        className="gradient-blob w-[300px] h-[600px] mt-1350 right-[-10rem] top-80"
+        style={{
+          background: "radial-gradient(circle,#efccfc , transparent 70%)",
+        }}
+        aria-hidden="true"
+      ></div>
+
    <div className="">
   <div
         className="gradient-blob w-[500px] h-[600px] mt-250 right-[-10rem] top-80"
@@ -107,8 +124,9 @@ const Agence = () => {
         }}
         aria-hidden="true"
       ></div>
-    {/* <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} /> */}
    </div>
+
+   
 {/* cd
       <div id='page2' className=" h-screen">
 
@@ -222,14 +240,16 @@ And finally, Member 5 & Member 6—the  duo. Honestly, we don’t know much abou
 
   <p className="hover:scale-105 transition-transform duration-300 px-20">
     And finally, <span className="text-indigo-500">Member 5 & Member 6</span> — the duo. 
-    Honestly, we don’t know much about these two mother—uh, legends. They’re like 
-    NPCs in a game: always noticed, rarely present, but every once in a while 
-    they surprise us at the most random times.
+   
   </p>
 
+ {/* Honestly, we don’t know much about these two mother—uh, legends. They’re like 
+    NPCs in a game: always noticed, rarely present, but every once in a while 
+    they surprise us at the most random times. */}
 </div>
 
-<div className="text-[60px] font-[font2] font-extrabold ml-30">LETS  <div className="">MEET</div>  THEM . </div>
+{/* <div className="text-[60px] font-[font2] font-extrabold ml-30">LETS  <div className="">MEET</div>  THEM . </div> */}
+<div className="mr-200"><RevealLinks /></div>
 
 
 {/* First  Group  */}
@@ -345,20 +365,20 @@ And finally, Member 5 & Member 6—the  duo. Honestly, we don’t know much abou
 
 
 
+<div className=" ml-[400px]  text-2xl font-[font2] mt-40 ">WANNA EXPLORER THE WEBSITES OR VISIT THE START AGAIN ?</div>
 
 
 
-
-<div className='font-[font2] flex items-center justify-center gap-2 mt-[150px]'>
-      <div className='lg:border-3 border-2 hover:border-[#D3FD50] hover:text-[#D3FD50] lg:h-44 flex items-center px-3 pt-1 lg:px-14 border-white rounded-full uppercase'>
+<div className='font-[font2] flex items-center justify-center gap-2 mt-[100px]'>
+      <div className='lg:border-3 border-2 border-black hover:border-[#D3FD50] hover:text-[#D3FD50] lg:h-44 flex items-center px-3 pt-1 lg:px-14  rounded-full uppercase'>
         <Link className='text-[6vw] lg:mt-6' to='/projects'>Projects</Link>
       </div>
-      <div className='lg:border-3 border-2 hover:border-[#D3FD50] hover:text-[#D3FD50]  lg:h-44 flex items-center px-3 pt-1 lg:px-14 border-white rounded-full uppercase'>
+      <div className='lg:border-3 border-black border-2 hover:border-[#D3FD50] hover:text-[#D3FD50]  lg:h-44 flex items-center px-3 pt-1 lg:px-14  rounded-full uppercase'>
         <Link className='text-[6vw] lg:mt-6' to='/'>Home</Link>
       </div>
     </div>
 
-<footer className="flex flex-col md:flex-row justify-between p-8 md:p-16 mt-[200px] bg-gradient-to-b from-gray-50 via-gray-100 to-gray-200 text-gray-800 rounded-t-3xl shadow-xl">
+<footer className="flex flex-col md:flex-row justify-between p-8 md:p-16 mt-[100px] bg-gradient-to-b from-[#fdfaff] via-[#faeefd] to-[#fdfaff] text-gray-800 rounded-t-3xl shadow-xl">
   {/* Left Section */}
   <div className="flex-1">
     <div className="mb-8">
