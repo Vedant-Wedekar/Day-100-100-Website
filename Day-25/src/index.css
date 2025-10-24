@@ -11,7 +11,22 @@
     font-family: font2;
     src: url(../public/fonts/Lausanne-500.woff2);
 }
+.edu {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.daw {
+  font-family: "Dawning of a New Day", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.space {
+  font-family: "Edu AU VIC WA NT Arrows", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
 .moveX{
     animation-name: moveAnimation;
