@@ -3,6 +3,7 @@ import ProjectCard from '../components/projects/ProjectCard'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import InfiniteMenu  from '../components/elements/InfiniteMenu'
+import Btn from '../components/elements/Btn'
 import bg from '../assets/bg.jpg'
 import W1 from '../assets/Ass1.png'
 import W2 from '../assets/Ass2.png'
@@ -24,17 +25,17 @@ const items = [
  { image: W1, link: 'https://google.com/', title: 'Item 1', description: 'This is pretty cool, right?' , dp:'https://static.wikia.nocookie.net/the-lady-of-eldia/images/4/43/Eren_Jaeger_%28850%29.png/revision/latest?cb=20201217121151'}, 
   { image: W2, link: 'https://google.com/', title: 'Item 2', description: 'This is pretty cool, right?' },
   { image: W3, link: 'https://google.com/', title: 'Item 3', description: 'This is pretty cool, right?' },
-  { image: W4, link: 'https://google.com/', title: 'Item 4', description: 'This is pretty cool, right?' },
+  { image: W4, link: 'https://framer.com/projects/Groomify-copy--cJNYPSyiFN8POVNi59FQ-d5J1O?node=augiA20Il', title: 'Item 4', description: 'This is pretty cool, right?' },
   { image: W5, link: 'https://google.com/', title: 'Item 5', description: 'This is pretty cool, right?' },
   { image: W6, link: 'https://google.com/', title: 'Item 6', description: 'This is pretty cool, right?' },
-  { image: W7, link: 'https://google.com/', title: 'Item 7', description: 'This is pretty cool, right?' },
+  { image: W7, link: 'https://framer.com/projects/Artemis-copy--8Wsd1TMDDI3cZIXla38C-gr4u6?node=GvB3jHHOH', title: 'Item 7', description: 'This is pretty cool, right?' },
   { image: W8, link: 'https://google.com/', title: 'Item 8', description: 'This is pretty cool, right?' },
-  { image: W9, link: 'https://google.com/', title: 'Item 9', description: 'This is pretty cool, right?' },
+  { image: W9, link: 'https://framer.com/projects/Vedant-Portfolio--2JXR7eM0682fpZTEK3ix-9NXGq?node=augiA20Il', title: 'Item 9', description: 'This is pretty cool, right?' },
   { image: W10, link: 'https://google.com/', title: 'Item 10', description: 'This is pretty cool, right?' },
   { image: W11, link: 'https://google.com/', title: 'Item 11', description: 'This is pretty cool, right?' },
   { image: W12, link: 'https://google.com/', title: 'Item 12', description: 'This is pretty cool, right?' },
-  { image: W13, link: 'https://google.com/', title: 'Item 13', description: 'This is pretty cool, right?' },
-  { image: W14, link: 'https://google.com/', title: 'Item 14', description: 'This is pretty cool, right?' , dp:'https://static.wikia.nocookie.net/the-lady-of-eldia/images/4/43/Eren_Jaeger_%28850%29.png/revision/latest?cb=20201217121151'},
+  { image: W13, link: 'https://framer.com/projects/SAVORIA-copy--bmSpzMUSXzCPgZ9OekA1-irAyz?node=K526egY5_', title: 'Item 13', description: 'This is pretty cool, right?' },
+  { image: W14, link: 'https://framer.com/projects/HypeApp-Landing-Page-copy--k1oQDwUeeTc6Y5cBdmAG-3RyUk?node=augiA20Il', title: 'Item 14', description: 'This is pretty cool, right?' , dp:'https://static.wikia.nocookie.net/the-lady-of-eldia/images/4/43/Eren_Jaeger_%28850%29.png/revision/latest?cb=20201217121151'},
   { image: W15, link: 'https://google.com/', title: 'Item 15', description: 'This is pretty cool, right?' },
 ];
 const Projects = () => {
@@ -119,8 +120,8 @@ const projects = [
       </div>
 
 
-
-<div className="w-full">
+  
+<div className="w-full ">
   <div
     className="text-white font-[font2] text-4xl uppercase flex flex-col items-center justify-center text-center h-[600px] bg-cover bg-center bg-no-repeat relative"
     style={{ backgroundImage: `url(${bg})` }}
@@ -185,17 +186,16 @@ const projects = [
 </div> 
 
 
-{/* 
-<div className="-mt-12  w-full h-[600px] bg-black">
- <div className="max-w-3xl mx-auto my-12 p-8 pt-30 text-white">
-      <h1 className="text-4xl font-bold mb-6 flex items-center gap-3">
+<div className="-mt-12  w-full h-[800px] bg-black">
+ <div className="max-w-[1400px] mx-auto my-12 p-8 pt-30 text-white">
+      <h1 className="text-3xl font-bold mb-6 flex items-center gap-3 space">
         👨‍🚀 HOPE YOU LOVE OUR WORK !!!
       </h1>
 
-      <p className="text-lg leading-relaxed mt-10 daw">
+      <p className="text-3xl leading-relaxed mt-10 daw">
         Congratulations, Founder! 🚀
       </p>
-      <p className="text-lg leading-relaxed space-y-4">
+      <p className="text-3xl leading-relaxed space-y-4 daw">
         We hope you love your new website because every template you see here is
         the result of our hard work, creativity, and countless hours of coding
         and design. At <strong>STUDIO NEXA</strong>, we believe in turning
@@ -203,7 +203,7 @@ const projects = [
         feature, layout, and interaction has been crafted to give your brand a
         professional, engaging, and impactful digital presence.
       </p>
-      <p className="text-lg leading-relaxed space-y-4">
+      <p className="text-3xl leading-relaxed space-y-4 daw">
         Your excitement is our fuel — seeing your startup shine online makes
         every late night, every brainstorming session, and every line of code
         worth it. We’re committed to continually improving, innovating, and
@@ -214,11 +214,10 @@ const projects = [
     </div>
   
 </div>
- */}
 
 
 
-
+<Btn />
 
 
 
