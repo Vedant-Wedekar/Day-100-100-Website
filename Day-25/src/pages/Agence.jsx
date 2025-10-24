@@ -137,6 +137,32 @@ const Agence = () => {
 </div> */}
 
 
+ <section className="relative  mt-50 overflow-hidden">
+      {/* Decorative Background Glow */}
+      <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_20%_80%,_rgba(99,102,241,0.3),_transparent_60%),_radial-gradient(circle_at_80%_20%,_rgba(236,72,153,0.25),_transparent_60%)]" />
+
+      <div className="relative max-w-[900px] mx-auto text-center">
+        {/* Title */}
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-pink-500 via-purple-400 to-blue-500 text-transparent bg-clip-text">
+          Share Your Idea — Let’s Build the Next Big Thing Together
+        </h2>
+
+        {/* Paragraph */}
+        <p className=" text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+          Every great startup begins with a spark. Share your idea with{" "}
+          <span className="text-blue-400 font-semibold">STUDIO NEXA</span>, and
+          if we see real potential, we’ll help you ignite it — with{" "}
+          <span className="text-pink-400 font-semibold">
+            funding connections
+          </span>
+          , expert mentorship, and personalized feedback. Whether it’s a bold
+          concept or a work-in-progress, our team is here to guide you toward
+          turning that vision into something tangible. Because sometimes, all a
+          great idea needs is the right launchpad.
+        </p>
+   </div>
+    </section>
+
 <Rehan />
 
 
@@ -377,6 +403,10 @@ And finally, Member 5 & Member 6—the  duo. Honestly, we don’t know much abou
         <Link className='text-[6vw] lg:mt-6' to='/'>Home</Link>
       </div>
     </div>
+
+
+
+
 
 <footer className="flex flex-col md:flex-row justify-between p-8 md:p-16 mt-[100px] bg-gradient-to-b from-[#fdfaff] via-[#faeefd] to-[#fdfaff] text-gray-800 rounded-t-3xl shadow-xl">
   {/* Left Section */}
