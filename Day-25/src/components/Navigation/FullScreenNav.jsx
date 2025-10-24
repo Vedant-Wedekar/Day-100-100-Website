@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import { NavbarContext } from '../../context/NavContext'
 import L2 from './logo2.png'
+import { Link } from "react-router-dom";
 const FullScreenNav = () => {
     const fullNavLinksRef = useRef(null)
     const fullScreenRef = useRef(null)
@@ -97,44 +98,81 @@ const FullScreenNav = () => {
                     </div>
                 </div>
                 <div className=' py-36'>
-                    <div  className='link origin-top relative border-t-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Projets</h1>
-                        <div className='moveLink absolute text-white flex top-0 bg-gradient-to-t from-sky-400 from-50% via-cyan-500 to-teal-400 to-50%" '>
-                            <div className='moveX flex items-center'   onClick={() => navigate("/projects")}>
-                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Creations</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg" alt="" />
-                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Made by Us</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg" alt="" />
-                            </div>
+                     {/* Projects Section */}
+     <div className="link origin-top relative border-t border-white">
+        <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase">
+          Projets
+        </h1>
 
-                            <div className='moveX flex items-center'>
-                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Creations</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg" alt="" />
-                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Made by Us</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg" alt="" />
-                            </div>
-                        </div>
+        <div className="moveLink absolute text-white flex top-0 bg-gradient-to-t from-sky-400 via-cyan-500 to-teal-400 w-full overflow-hidden">
+          {[0, 1].map((i) => (
+            <Link
+              to="/projects"
+              key={i}
+              className="moveX flex items-center cursor-pointer"
+            >
+              <h2 className="whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
+                Creations
+              </h2>
+              <img
+                className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
+                alt=""
+              />
+              <h2 className="whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
+                Made by Us
+              </h2>
+              <img
+                className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
+                alt=""
+              />
+            </Link>
+          ))}
+        </div>
+      </div>
 
-                    </div>
-                      <div className='link origin-top relative border-t-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Agency</h1>
-                        <div className='moveLink absolute text-white flex top-0 bg-[#6D28D9]'>
-                            <div className='moveX flex items-center'>
-                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Who We Are</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg" alt="" />
-                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Our Space</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg" alt="" />
-                            </div>
-                            <div className='moveX flex items-center'>
-                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Who We Are</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg" alt="" />
-                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Our Space</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg" alt="" />
-                            </div>
-                        </div>
+      {/* Agency Section */}
+      <div className="link origin-top relative border-t border-white">
+        <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase">
+          Agency
+        </h1>
 
-                    </div>
-                    <div className='link origin-top relative border-t-1 border-white'>
+        <div className="moveLink absolute text-white flex top-0 bg-[#6D28D9] w-full overflow-hidden">
+          {[0, 1].map((i) => (
+            <Link
+              to="/agence"
+              key={i}
+              className="moveX flex items-center cursor-pointer"
+            >
+              <h2 className="whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
+                Who We Are
+              </h2>
+              <img
+                className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
+                alt=""
+              />
+              <h2 className="whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
+                Our Space
+              </h2>
+              <img
+                className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
+                alt=""
+              />
+            </Link>
+          ))}
+        </div>
+      </div>
+
+
+
+
+
+
+      
+                    <div className='link origin-top relative border-t-1 border-y-1  border-white'>
                         <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Contact</h1>
                         <div className='moveLink absolute text-white flex top-0 bg-[#E4EBF1]'>
                             <div className='moveX flex items-center'>
@@ -153,7 +191,7 @@ const FullScreenNav = () => {
 
                     </div>
                   
-                    <div className='link origin-top relative border-y-1 border-white'>
+                    {/* <div className='link origin-top relative border-y-1 border-white'>
                         <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Blogs</h1>
                         <div className='moveLink absolute  text-white flex top-0 bg-[#6E7F8D]'>
                             <div className='moveX flex items-center'>
@@ -170,7 +208,7 @@ const FullScreenNav = () => {
                             </div>
                         </div>
 
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
