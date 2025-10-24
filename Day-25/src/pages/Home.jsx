@@ -24,6 +24,7 @@ import W6 from '../assets/Ass6.png'
 import W7 from '../assets/Ass7.png'
 import W8 from '../assets/Ass8.png'
 import ShinyText from '../components/elements/ShinyText'
+import Footer from '../components/elements/Footer'
 
 
 
@@ -66,8 +67,8 @@ const handleAnimationComplete = () => {
       </div> 
 
 
-<div className="border-2 mt-20 ml-15 mr-15 py-10 shadow-2xl  rounded-[100px]">
-
+<div className="border-2 mt-20 ml-15 mr-15 py-10 shadow-[0_35px_60px_-15px_rgba(0,0,0,70)] bg-[#e8f5fc] rounded-[100px]">
+                                                        
 
 
 
@@ -138,6 +139,9 @@ const handleAnimationComplete = () => {
  </div>
 
 
+
+
+
       <div className="mt-30">     <Cursor/></div>
 
      </div></div>
@@ -153,7 +157,7 @@ const handleAnimationComplete = () => {
 
 
 
- <div className="bg-black w-370 h-220 ml-5 pt-20 rounded-[70px]">
+ <div className="bg-black w-370 h-210 ml-5 pt-20 rounded-[70px]">
 <div className="ml-29  mb-10  ">
 <Para className="" /></div>
  <div className="flex justify-center px-8 font-[font2]">
@@ -173,8 +177,8 @@ const handleAnimationComplete = () => {
 
 
 
-<div className="mt-40 mb-40">
-<div className=" text-6xl font-bold green">Showcasing the Startup Spark</div>
+<div className="mt-40 ml-15 mb-40">
+<div className=" text-6xl font-bold font-[font2]">Showcasing the Startup Spark</div>
 <div className="text-2xl mt-5">We don’t just build projects, we build possibilities.
 Here’s a glimpse of dreams we’ve turned into design.</div>
 </div>
@@ -205,6 +209,8 @@ Here’s a glimpse of dreams we’ve turned into design.</div>
 
 
       <div className="mt-00">    <HomeBottomText /></div>
+
+      <Footer />
   
     </div>
   )

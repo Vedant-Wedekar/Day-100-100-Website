@@ -38,9 +38,21 @@ export default function Para() {
   }, []);
 
   return (
-    <div className="page w-320 h-40 py-10 bg-[#d2f7e9] rounded-[100px] " ref={containerRef}>
-      <h1 className="font-[font2] text-[#0f172a]" data-animate>At Studio Nexa, we believe every idea deserves</h1>
-      <p data-animate className="font-[font2] text-black">a strong digital foundation.</p>
-    </div>
+    // <div className="page w-320 h-40 py-10 bg-[#d2f7e9] rounded-[100px] " ref={containerRef}>
+    //   <h1 className="font-[font2] text-[#0f172a]" data-animate>At Studio Nexa, we believe every idea deserves</h1>
+    //   <p data-animate className="font-[font2] text-black">a strong digital foundation.</p>
+    // </div>
+    <div
+  className="page w-320 py-3 bg-[#d2f7e9] rounded-[100px]  overflow-visible"
+  ref={containerRef}
+>
+  <h1 className="font-[font2] text-[#0f172a] leading-relaxed" data-animate>
+    At Studio Nexa, we believe every idea deserves
+  </h1>
+  <p data-animate className="font-[font2] text-black leading-relaxed">
+    a strong digital foundation.
+  </p>
+</div>
+
   );
 }
