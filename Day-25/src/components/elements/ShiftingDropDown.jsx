@@ -4,7 +4,7 @@ import {
   FiBarChart2,
   FiChevronDown,
   FiHome,
-  FiPieChart,
+   FiDollarSign,
 } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -159,23 +159,23 @@ const Nub = ({ selected }) => {
   );
 };
 
-const Products = () => {
+const Services = () => {
   return (
     <div className="">
       <div className="flex gap-4 ">
         <div>
-          <h3 className="mb-2 text-sm font-medium">Startup</h3>
+          <h3 className="mb-2 text-sm text-white font-medium">Startup</h3>
           <a href="#" className="mb-1 block text-sm text-neutral-400">
-            THinking
+            Websites
           </a>
           <a href="#" className="block text-sm text-neutral-400">
-        THinking
+       Exposure
           </a>
         </div>
         <div>
-          <h3 className="mb-2 text-sm font-medium">Scaleup</h3>
+          <h3 className="mb-2 text-white   text-sm font-medium">Scaleup</h3>
           <a href="#" className="mb-1 block text-sm text-neutral-400">
-            THinking
+            Scalable Websites
           </a>
           <a href="#" className="mb-1 block text-sm text-neutral-400">
             THinking
@@ -185,26 +185,15 @@ const Products = () => {
           </a>
         </div>
         <div>
-          <h3 className="mb-2 text-sm font-medium">Enterprise</h3>
+          <h3 className="mb-2 text-white  text-sm font-medium">Enterprise</h3>
           <a href="#" className="mb-1 block text-sm text-neutral-400">
-        THinking
+        Nothing For Now 
           </a>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-         THinking
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            THinking
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-          THinking
-          </a>
+         
         </div>
       </div>
 
-      <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-indigo-300">
-        <span>View more</span>
-        <FiArrowRight />
-      </button>
+     
     </div>
   );
 };
@@ -217,21 +206,21 @@ const Pricing = () => {
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FiHome className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Startup</span>
+        <span className="text-xs">Build</span>
       </a>
       <a
         href="#"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FiBarChart2 className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">   THinking</span>
+        <span className="text-xs"> Launch</span>
       </a>
       <a
         href="#"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
-        <FiPieChart className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">   THinking</span>
+        <FiDollarSign className="mb-2 text-xl text-indigo-300" />
+        <span className="text-xs"> At No Cost</span>
       </a>
     </div>
   );
@@ -274,8 +263,8 @@ const Blog = () => {
 
 const TABS = [
   {
-    title: "Products",
-    Component: Products,
+    title: "Services",
+    Component: Services,
   },
   {
     title: "Pricing",
