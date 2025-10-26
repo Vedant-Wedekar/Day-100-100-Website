@@ -25,6 +25,7 @@ import W7 from '../assets/Ass7.png'
 import W8 from '../assets/Ass8.png'
 import ShinyText from '../components/elements/ShinyText'
 import Footer from '../components/elements/Footer'
+import { CustomKanban } from '../components/elements/CustomKanban'
 
 
 
@@ -204,8 +205,7 @@ Here’s a glimpse of dreams we’ve turned into design.</div>
 
 
 </div>
-
-
+<CustomKanban />
 
 
       <div className="mt-00">    <HomeBottomText /></div>

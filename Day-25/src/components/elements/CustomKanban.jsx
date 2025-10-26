@@ -5,7 +5,7 @@ import { FaFire } from "react-icons/fa";
 
 export const CustomKanban = () => {
   return (
-    <div className="h-screen w-full bg-neutral-900 text-neutral-50">
+    <div className="h-screen w-full ml-2 bg-[#111111] pl-30  pt-10 rounded-[300px]   text-neutral-50">
       <Board />
     </div>
   );
@@ -329,3 +329,11 @@ const DEFAULT_CARDS = [
     column: "done",
   },
 ];
+
+
+
+
+
+
+
+
