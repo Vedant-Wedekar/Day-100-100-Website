@@ -2,10 +2,17 @@ import React, { useState } from "react";
 import { FiPlus, FiTrash } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { FaFire } from "react-icons/fa";
+import ShinyText from "./ShinyText";
 
 export const CustomKanban = () => {
   return (
     <div className="h-screen w-full ml-2 bg-[#111111] pl-30  pt-10 rounded-[300px]   text-neutral-50">
+       <div className="ml-[25vw] bg-gray-700 w-[500px] h-[80px] text-5xl rounded-[200px]"> <ShinyText
+    text="UND"
+    disabled={false}
+    speed={5}
+    className="custom-class"
+  /></div>
       <Board />
     </div>
   );
