@@ -288,6 +288,7 @@ const AddCard = ({ column, setCards }) => {
               type="submit"
               className="flex items-center gap-1.5 rounded bg-neutral-50 px-3 py-1.5 text-xs text-neutral-950 transition-colors hover:bg-neutral-300"
             >
+            
               <span>Add</span>
               <FiPlus />
             </button>
