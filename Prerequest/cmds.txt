@@ -1,6 +1,6 @@
 ✅ 1. Create the React App
-npm create vite@latest my-react-app -- --template react
-cd my-app
+npm create vite@latest Ved-app -- --template react
+cd Ved-app
 
 ✅ 2. Install Tailwind CSS and dependencies
 npm install tailwindcss @tailwindcss/vite
