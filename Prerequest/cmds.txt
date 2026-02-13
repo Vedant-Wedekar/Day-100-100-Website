@@ -19,7 +19,6 @@ npm run dev
 ✅ 6. Install React
 npm install @vitejs/plugin-react --save-dev
 
-
 cd ..
 
 cd Day-3/my-react-app
