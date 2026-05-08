@@ -1,1 +1,7 @@
 @import "tailwindcss";
+.wall{
+    background-image:url("./assets/wall.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
