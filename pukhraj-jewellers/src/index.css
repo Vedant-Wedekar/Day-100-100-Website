@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+* { -webkit-tap-highlight-color: transparent; }
+html { scroll-behavior: smooth; }
+body {
+  background: #fdfbf7;
+  color: #241c15;
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 9px; }
+::-webkit-scrollbar-track { background: #f7f1e8; }
+::-webkit-scrollbar-thumb { background: #dba38a; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #c39b4e; }
+::selection { background: #c39b4e; color: #fff; }
+
+@layer components {
+  .section-pad { @apply px-5 sm:px-8 lg:px-16 xl:px-24; }
+  .container-x { @apply max-w-7xl mx-auto w-full; }
+
+  .gold-text {
+    background: linear-gradient(100deg,#b07f3a,#e7cd92,#dba38a,#b07f3a);
+    background-size: 200% auto;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-[11px] sm:text-xs font-semibold uppercase tracking-luxe text-gold;
+  }
+  .eyebrow::before { content:""; @apply h-px w-8 bg-gold/50 inline-block; }
+  .eyebrow.center::after { content:""; @apply h-px w-8 bg-gold/50 inline-block; }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium tracking-wide2 uppercase text-white whitespace-nowrap transition-all duration-300;
+    background: linear-gradient(110deg,#c39b4e,#dba38a);
+    box-shadow: 0 14px 36px -14px rgba(195,155,78,0.7);
+  }
+  .btn-gold:hover { filter: brightness(1.06); transform: translateY(-2px); }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink/20 px-7 py-3.5 text-sm font-medium tracking-wide2 uppercase whitespace-nowrap transition-all duration-300 hover:border-gold hover:text-gold;
+  }
+  .glass {
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.7);
+  }
+  .card-luxe { @apply bg-white border border-ink/8 transition-all duration-500; }
+  .hair { @apply h-px w-full bg-gradient-to-r from-transparent via-gold/40 to-transparent; }
+  .badge-lw {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide2 text-white;
+    background: linear-gradient(110deg,#c39b4e,#dba38a);
+  }
+}
+
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* Swiper */
+.swiper-pagination-bullet { background: #c39b4e !important; opacity: 0.35 !important; }
+.swiper-pagination-bullet-active { opacity: 1 !important; width: 26px !important; border-radius: 99px !important; }
+
+.img-shimmer { background: linear-gradient(110deg,#f7f1e8 8%,#efe6d6 18%,#f7f1e8 33%); background-size: 200% 100%; animation: shimmer 1.4s linear infinite; }
