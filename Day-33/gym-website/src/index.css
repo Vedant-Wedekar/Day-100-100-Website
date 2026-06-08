@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Sora:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+* { -webkit-tap-highlight-color: transparent; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #0a0a0b;
+  color: #f4f4f0;
+  font-family: 'Sora', sans-serif;
+  overflow-x: hidden;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar { width: 9px; }
+::-webkit-scrollbar-track { background: #0a0a0b; }
+::-webkit-scrollbar-thumb { background: #26262c; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #c8ff00; }
+
+::selection { background: #c8ff00; color: #0a0a0b; }
+
+@layer components {
+  .glass {
+    background: rgba(26,26,30,0.55);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.07);
+  }
+  .grad-text {
+    background: linear-gradient(100deg,#c8ff00,#ff4d12);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .section-pad { @apply px-5 sm:px-8 lg:px-16 xl:px-24; }
+  .container-x { @apply max-w-7xl mx-auto w-full; }
+}
+
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* swiper overrides */
+.swiper-pagination-bullet { background: #6b6b72 !important; opacity: 1 !important; }
+.swiper-pagination-bullet-active { background: #c8ff00 !important; width: 22px !important; border-radius: 99px !important; }

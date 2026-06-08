@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+
+* { -webkit-tap-highlight-color: transparent; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: #f7f3ec;
+  color: #1a1714;
+  font-family: 'Jost', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 9px; }
+::-webkit-scrollbar-track { background: #efe8dc; }
+::-webkit-scrollbar-thumb { background: #cdaf7c; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #b08d4f; }
+::selection { background: #b08d4f; color: #f7f3ec; }
+
+@layer components {
+  .section-pad { @apply px-5 sm:px-8 lg:px-16 xl:px-24; }
+  .container-x { @apply max-w-7xl mx-auto w-full; }
+
+  /* gold foil text */
+  .gold-text {
+    background: linear-gradient(100deg,#9c7838,#e6d4b3,#b08d4f,#9c7838);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-[11px] sm:text-xs font-medium uppercase tracking-luxe text-gold;
+  }
+  .eyebrow::before, .eyebrow.center::after {
+    content: ""; @apply h-px w-8 bg-gold/50 inline-block;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink text-ivory px-7 py-3.5 text-sm tracking-wide2 uppercase whitespace-nowrap transition-all duration-300 hover:bg-gold;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink/25 px-7 py-3.5 text-sm tracking-wide2 uppercase whitespace-nowrap transition-all duration-300 hover:border-gold hover:text-gold;
+  }
+  .card-luxe {
+    @apply bg-ivory border border-ink/8 transition-all duration-500;
+  }
+  .hair-divider { @apply h-px w-full bg-gradient-to-r from-transparent via-gold/40 to-transparent; }
+}
+
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* Swiper */
+.swiper-pagination-bullet { background: #b08d4f !important; opacity: 0.35 !important; }
+.swiper-pagination-bullet-active { opacity: 1 !important; width: 26px !important; border-radius: 99px !important; }
+
+/* shimmer image placeholder */
+.img-shimmer {
+  background: linear-gradient(110deg,#efe8dc 8%,#e3d8c5 18%,#efe8dc 33%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
