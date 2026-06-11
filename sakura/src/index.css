@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fbf8f2;
+  --bg-soft: #f4eee2;
+  --fg: #1a1614;
+  --fg-soft: #5b534c;
+  --line: rgba(26, 22, 20, 0.1);
+  --card: rgba(255, 255, 255, 0.66);
+}
+
+.dark {
+  --bg: #14110f;
+  --bg-soft: #1d1916;
+  --fg: #f4eee2;
+  --fg-soft: #b8ada1;
+  --line: rgba(244, 238, 226, 0.12);
+  --card: rgba(36, 31, 27, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Lenis controls scrolling; let it manage the timeline */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  margin: 0;
+  /* clip (not hidden) prevents horizontal scroll without breaking sticky/position */
+  overflow-x: clip;
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+#root {
+  overflow-x: clip;
+  width: 100%;
+}
+
+/* Washi paper grain — sits behind everything, theme aware */
+.washi-grain::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+.dark .washi-grain::before {
+  mix-blend-mode: screen;
+  opacity: 0.06;
+}
+
+@layer components {
+  .glass {
+    background: var(--card);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid var(--line);
+  }
+
+  /* fluid section padding — scales smoothly phone -> laptop */
+  .section {
+    position: relative;
+    z-index: 1;
+    padding-block: clamp(4rem, 9vw, 8.5rem);
+    padding-inline: clamp(1.25rem, 5vw, 5rem);
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 80rem;
+    margin-inline: auto;
+  }
+
+  .eyebrow {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    font-size: clamp(0.62rem, 1.3vw, 0.74rem);
+    color: var(--fg-soft);
+  }
+
+  /* fluid display type */
+  .h-display {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    font-size: clamp(2.4rem, 8vw, 6rem);
+  }
+  .h-section {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.05;
+    font-size: clamp(1.9rem, 5.2vw, 3.6rem);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    border-radius: 999px;
+    padding: 0.9rem 1.6rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease,
+      background-color 0.3s ease, color 0.3s ease;
+    will-change: transform;
+  }
+  .btn:active {
+    transform: scale(0.97);
+  }
+  .btn-primary {
+    background: var(--fg);
+    color: var(--bg);
+  }
+  .btn-primary:hover {
+    box-shadow: 0 18px 40px -16px rgba(26, 22, 20, 0.55);
+    transform: translateY(-2px);
+  }
+  .btn-ghost {
+    border: 1px solid var(--line);
+    color: var(--fg);
+    background: transparent;
+  }
+  .btn-ghost:hover {
+    background: var(--card);
+    transform: translateY(-2px);
+  }
+}
+
+/* min-w-0 helper for grid/flex children that overflow */
+.no-min {
+  min-width: 0;
+}
+
+/* Custom cursor — only where a fine pointer exists */
+@media (pointer: fine) {
+  .cursor-host * {
+    cursor: none;
+  }
+}
+
+/* Keyboard focus is always visible */
+:focus-visible {
+  outline: 2px solid var(--fg);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+::selection {
+  background: #e48aa0;
+  color: #fff;
+}
+
+/* Quiet everything for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Thin themed scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--fg-soft);
+  border-radius: 999px;
+  opacity: 0.4;
+}
